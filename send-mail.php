@@ -9,7 +9,7 @@ if(isset($_POST['submit']))
     // $date = $_POST['date'];
     // $time = $_POST['time'];
     
-    $to = "madhukarshroti2108@gmail.com";
+    $to = "rajeshnirmal444@gmail.com";
     
     $subject = "New Message from - Name: $name, Subject: $number ";
     
