@@ -1105,25 +1105,34 @@ section {
     padding-right: 20px 15px;
   }
 }
+
 .column-container {
-  column-count: 3;
-  column-gap: 20px; /* Adjust the gap between columns as needed */
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.column-container p {
-  margin: 0; /* Remove default margin */
+.column-container h2 {
+  width: 100%;
 }
 
-.column-container b:first-of-type {
-  display: block; /* Make <b> element block-level */
-  margin-bottom: 10px; /* Add some space below the first bold element */
+.columns {
+  flex: 0 0 33.33%;
 }
 
-.column-container p:first-of-type {
-  font-weight: bold; /* Make the first paragraph bold */
+.columns p {
+  margin: 0;
+  text-transform: capitalize;
 }
 
-.column-container p:not(:first-of-type) {
-  text-transform: capitalize; /* Capitalize text */
+@media screen and (max-width: 768px) {
+  .columns {
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .columns {
+    flex: 0 0 100%;
+  }
 }
 
