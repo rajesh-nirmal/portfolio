@@ -1105,3 +1105,17 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+.column-container {
+  column-count: 3;
+  column-gap: 20px; /* Adjust the gap between columns as needed */
+}
+
+.column-container p {
+  margin: 0; /* Remove default margin */
+}
+
+.column-container b {
+  display: block; /* Make <b> elements block-level */
+  text-transform: capitalize; /* Capitalize text */
+}
