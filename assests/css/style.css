@@ -1105,7 +1105,6 @@ section {
     padding-right: 20px 15px;
   }
 }
-
 .column-container {
   column-count: 3;
   column-gap: 20px; /* Adjust the gap between columns as needed */
@@ -1115,7 +1114,16 @@ section {
   margin: 0; /* Remove default margin */
 }
 
-.column-container b {
-  display: block; /* Make <b> elements block-level */
+.column-container b:first-of-type {
+  display: block; /* Make <b> element block-level */
+  margin-bottom: 10px; /* Add some space below the first bold element */
+}
+
+.column-container p:first-of-type {
+  font-weight: bold; /* Make the first paragraph bold */
+}
+
+.column-container p:not(:first-of-type) {
   text-transform: capitalize; /* Capitalize text */
 }
+
