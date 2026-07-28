@@ -19,9 +19,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
   <style>
 /* ==========================================================================
    Rajesh Nirmal - Fully Responsive Mobile-Optimized Portfolio Stylesheet
@@ -131,6 +128,12 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+svg {
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .container {
@@ -273,12 +276,10 @@ img {
   border-radius: 10px;
   display: flex;
   align-items: center;
-  gap: 0.45rem;
+  gap: 0.5rem;
   min-height: 44px;
   transition: all 0.2s ease;
 }
-
-.nav-link i { font-size: 0.85rem; }
 
 .nav-link:hover, .nav-link.active {
   color: var(--text-main);
@@ -302,7 +303,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
   transition: all 0.3s ease;
   touch-action: manipulation;
 }
@@ -312,10 +312,10 @@ img {
   box-shadow: var(--shadow-glow);
 }
 
-:root[data-theme="dark"] .light-icon { display: none; }
-:root[data-theme="dark"] .dark-icon { display: block; }
-:root[data-theme="light"] .dark-icon { display: none; }
-:root[data-theme="light"] .light-icon { display: block; }
+:root[data-theme="dark"] .light-icon { display: none !important; }
+:root[data-theme="dark"] .dark-icon { display: block !important; }
+:root[data-theme="light"] .dark-icon { display: none !important; }
+:root[data-theme="light"] .light-icon { display: block !important; }
 
 .mobile-menu-toggle {
   display: none;
@@ -325,7 +325,6 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 12px;
-  font-size: 1.25rem;
   cursor: pointer;
   align-items: center;
   justify-content: center;
@@ -337,7 +336,7 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
   padding: 0.8rem 1.5rem;
   min-height: 46px;
   border-radius: 12px;
@@ -538,7 +537,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
   transition: all 0.2s ease;
   touch-action: manipulation;
 }
@@ -569,8 +567,8 @@ img {
 
 .profile-avatar-box {
   position: relative;
-  width: 140px;
-  height: 140px;
+  width: 150px;
+  height: 150px;
   margin: 0 auto 1.25rem auto;
 }
 
@@ -726,7 +724,7 @@ img {
   gap: 0.6rem;
 }
 
-.card-heading i { color: var(--accent-secondary); }
+.card-heading svg { color: var(--accent-secondary); }
 .about-card p { color: var(--text-muted); margin-bottom: 1.15rem; font-size: 1rem; }
 
 .highlight-boxes {
@@ -746,7 +744,7 @@ img {
   align-items: flex-start;
 }
 
-.h-box i { font-size: 1.25rem; color: var(--accent-secondary); margin-top: 0.15rem; flex-shrink: 0; }
+.h-box svg { color: var(--accent-secondary); margin-top: 0.15rem; flex-shrink: 0; }
 .h-box h4 { font-size: 0.92rem; font-weight: 700; margin-bottom: 0.2rem; }
 .h-box p { font-size: 0.82rem; margin-bottom: 0; }
 
@@ -880,7 +878,7 @@ img {
 }
 
 .role-title { font-size: 1.25rem; font-weight: 800; color: var(--text-main); }
-.company-name { font-size: 0.95rem; color: var(--accent-secondary); font-weight: 600; margin-top: 0.2rem; }
+.company-name { font-size: 0.95rem; color: var(--accent-secondary); font-weight: 600; margin-top: 0.2rem; display: flex; align-items: center; gap: 0.4rem; }
 .role-meta { display: flex; flex-direction: column; align-items: flex-end; font-size: 0.82rem; color: var(--text-muted); }
 .role-points { margin-left: 1.1rem; }
 .role-points li { list-style-type: disc; color: var(--text-muted); font-size: 0.92rem; margin-bottom: 0.55rem; }
@@ -895,7 +893,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
   color: white;
   margin: 0 auto 1.1rem auto;
 }
@@ -918,7 +915,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
   flex-shrink: 0;
 }
 .method-details { flex-grow: 1; word-break: break-word; }
@@ -1007,9 +1003,7 @@ input[type="text"], input[type="email"], textarea, select {
 }
 .toast-notification.show { transform: translateY(0); opacity: 1; }
 
-/* --------------------------------------------------------------------------
-   RESPONSIVE MEDIA QUERIES (Mobile, Tablet, Desktop)
-   -------------------------------------------------------------------------- */
+/* Responsive Media Queries */
 @media (max-width: 992px) {
   .hero-container { grid-template-columns: 1fr; text-align: center; }
   .hero-description { margin-left: auto; margin-right: auto; }
@@ -1106,23 +1100,23 @@ input[type="text"], input[type="email"], textarea, select {
 
       <nav class="main-nav" id="mainNav">
         <ul class="nav-links">
-          <li><a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
-          <li><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
-          <li><a href="#skills" class="nav-link"><i class="fa-solid fa-laptop-code"></i> Skills</a></li>
-          <li><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
-          <li><a href="#achievements" class="nav-link"><i class="fa-solid fa-trophy"></i> Achievements</a></li>
-          <li><a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+          <li><a href="#hero" class="nav-link active"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Home</a></li>
+          <li><a href="#about" class="nav-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> About</a></li>
+          <li><a href="#skills" class="nav-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg> Skills</a></li>
+          <li><a href="#experience" class="nav-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg> Experience</a></li>
+          <li><a href="#achievements" class="nav-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg> Achievements</a></li>
+          <li><a href="#contact" class="nav-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg> Contact</a></li>
         </ul>
       </nav>
 
       <div class="header-actions">
         <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
-          <i class="fa-solid fa-moon dark-icon"></i>
-          <i class="fa-solid fa-sun light-icon"></i>
+          <svg class="dark-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg class="light-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
         </button>
         <a href="#contact" class="btn btn-primary nav-cta">Get in Touch</a>
         <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu">
-          <i class="fa-solid fa-bars"></i>
+          <svg id="menuBarsIcon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
         </button>
       </div>
     </div>
@@ -1152,25 +1146,37 @@ input[type="text"], input[type="email"], textarea, select {
 
           <div class="hero-buttons">
             <a href="#experience" class="btn btn-primary btn-glow">
-              <i class="fa-solid fa-briefcase"></i> View Experience
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg> View Experience
             </a>
             <a href="#contact" class="btn btn-secondary">
-              <i class="fa-solid fa-envelope"></i> Get In Touch
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> Get In Touch
             </a>
             <button class="btn btn-outline" id="downloadResumeBtn">
-              <i class="fa-solid fa-download"></i> Save Portfolio PDF
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg> Save Portfolio PDF
             </button>
           </div>
 
           <!-- Social Quick Links -->
           <div class="social-hero">
             <span class="social-label">Connect:</span>
-            <a href="https://linkedin.com/in/rajeshnirmal" target="_blank" rel="noopener" title="LinkedIn" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://x.com/RajeshNirmal15" target="_blank" rel="noopener" title="X / Twitter" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://instagram.com/rajesh_nirmal444" target="_blank" rel="noopener" title="Instagram" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100005462175648" target="_blank" rel="noopener" title="Facebook" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="mailto:rajeshnirmal444@gmail.com" title="Email Rajesh" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
-            <a href="tel:+918837882378" title="Call Rajesh" class="social-icon"><i class="fa-solid fa-phone"></i></a>
+            <a href="https://linkedin.com/in/rajeshnirmal" target="_blank" rel="noopener" title="LinkedIn" class="social-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            </a>
+            <a href="https://x.com/RajeshNirmal15" target="_blank" rel="noopener" title="X / Twitter" class="social-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://instagram.com/rajesh_nirmal444" target="_blank" rel="noopener" title="Instagram" class="social-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100005462175648" target="_blank" rel="noopener" title="Facebook" class="social-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="mailto:rajeshnirmal444@gmail.com" title="Email Rajesh" class="social-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+            <a href="tel:+918837882378" title="Call Rajesh" class="social-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </a>
           </div>
         </div>
 
@@ -1180,13 +1186,13 @@ input[type="text"], input[type="email"], textarea, select {
               <div class="profile-avatar-box">
                 <div class="avatar-ring"></div>
                 <img src="assets/rajesh-nirmal.jpg" alt="Rajesh Nirmal - Performance Marketer" class="profile-img">
-                <span class="verified-badge"><i class="fa-solid fa-check"></i></span>
+                <span class="verified-badge">✓</span>
               </div>
               <h3 class="profile-name">Rajesh Nirmal</h3>
               <p class="profile-role">Performance Marketer & Team Lead</p>
 
               <div class="profile-location">
-                <i class="fa-solid fa-location-dot"></i> Noida, UP, India (Serving SG, MY, US, AU & Global)
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Noida, UP, India (Serving SG, MY, US, AU & Global)
               </div>
 
               <div class="tags-cloud">
@@ -1200,7 +1206,9 @@ input[type="text"], input[type="email"], textarea, select {
 
             <!-- Floating Metric Chips -->
             <div class="floating-chip chip-1">
-              <div class="chip-icon bg-green"><i class="fa-solid fa-sack-dollar"></i></div>
+              <div class="chip-icon bg-green">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
               <div class="chip-info">
                 <span class="chip-val">SGD 150K / Mo</span>
                 <span class="chip-lbl">Managed Ad Spend</span>
@@ -1208,7 +1216,9 @@ input[type="text"], input[type="email"], textarea, select {
             </div>
 
             <div class="floating-chip chip-2">
-              <div class="chip-icon bg-blue"><i class="fa-solid fa-folder-open"></i></div>
+              <div class="chip-icon bg-blue">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"/></svg>
+              </div>
               <div class="chip-info">
                 <span class="chip-val">30+ Projects</span>
                 <span class="chip-lbl">Managed Independently</span>
@@ -1216,7 +1226,9 @@ input[type="text"], input[type="email"], textarea, select {
             </div>
 
             <div class="floating-chip chip-3">
-              <div class="chip-icon bg-purple"><i class="fa-solid fa-people-group"></i></div>
+              <div class="chip-icon bg-purple">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
               <div class="chip-info">
                 <span class="chip-val">Team Lead</span>
                 <span class="chip-lbl">Mentoring 4 Specialists</span>
@@ -1267,7 +1279,10 @@ input[type="text"], input[type="email"], textarea, select {
 
         <div class="about-grid">
           <div class="about-card glass-card">
-            <h3 class="card-heading"><i class="fa-solid fa-user-astronaut"></i> Professional Summary</h3>
+            <h3 class="card-heading">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Professional Summary
+            </h3>
             <p>
               I am a <strong>Performance Marketing Professional with 5+ years of hands-on experience</strong> specializing in Google Ads, Meta Ads, lead generation, paid media strategy, conversion tracking, and performance optimization across B2B and D2C businesses globally.
             </p>
@@ -1280,21 +1295,21 @@ input[type="text"], input[type="email"], textarea, select {
             
             <div class="highlight-boxes">
               <div class="h-box">
-                <i class="fa-solid fa-diagram-project"></i>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
                 <div>
                   <h4>Lead Gen & Funnel Architect</h4>
                   <p>Complete acquisition funnels for high-intent B2B & D2C leads</p>
                 </div>
               </div>
               <div class="h-box">
-                <i class="fa-solid fa-vial-circle-check"></i>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                 <div>
                   <h4>GTM, GA4 & Tracking Pro</h4>
                   <p>Enhanced Conversions, server-side events & attribution modeling</p>
                 </div>
               </div>
               <div class="h-box">
-                <i class="fa-solid fa-pen-ruler"></i>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
                 <div>
                   <h4>Landing Page CRO & Content</h4>
                   <p>Wireframing, CRO audits, and monthly social content calendars</p>
@@ -1305,7 +1320,10 @@ input[type="text"], input[type="email"], textarea, select {
 
           <div class="about-sidebar">
             <div class="glass-card info-list-card">
-              <h3><i class="fa-solid fa-list-check text-cyan"></i> Current Responsibilities</h3>
+              <h3>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>
+                Current Responsibilities
+              </h3>
               <ul class="responsibilities-list">
                 <li>Manage 30+ Google Ads & Meta Ads projects independently.</li>
                 <li>Manage ~SGD 150,000 monthly advertising budget.</li>
@@ -1321,7 +1339,10 @@ input[type="text"], input[type="email"], textarea, select {
 
             <!-- Global Markets Card -->
             <div class="glass-card certs-card">
-              <h3><i class="fa-solid fa-earth-americas text-gold"></i> Global Target Markets</h3>
+              <h3>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                Global Target Markets
+              </h3>
               <div class="tags-cloud mt-2">
                 <span class="badge-tag">Singapore</span>
                 <span class="badge-tag">Malaysia</span>
@@ -1361,7 +1382,7 @@ input[type="text"], input[type="email"], textarea, select {
           <!-- Primary Platforms -->
           <div class="skill-card glass-card" data-category="paid-media">
             <div class="skill-header">
-              <div class="skill-icon-bg bg-google"><i class="fa-brands fa-google"></i></div>
+              <div class="skill-icon-bg bg-google">G</div>
               <h3>Google Ads Suite</h3>
             </div>
             <p>Search, Display, Performance Max (PMax), Shopping, Video, Demand Gen</p>
@@ -1371,7 +1392,7 @@ input[type="text"], input[type="email"], textarea, select {
 
           <div class="skill-card glass-card" data-category="paid-media">
             <div class="skill-header">
-              <div class="skill-icon-bg bg-meta"><i class="fa-brands fa-meta"></i></div>
+              <div class="skill-icon-bg bg-meta">∞</div >
               <h3>Meta Ads (FB & IG)</h3>
             </div>
             <p>Lead Gen, Catalog Sales, Retargeting, CBO, Advantage+ Creative Strategy</p>
@@ -1381,7 +1402,7 @@ input[type="text"], input[type="email"], textarea, select {
 
           <div class="skill-card glass-card" data-category="paid-media">
             <div class="skill-header">
-              <div class="skill-icon-bg bg-microsoft"><i class="fa-brands fa-microsoft"></i></div>
+              <div class="skill-icon-bg bg-microsoft">M</div>
               <h3>Microsoft / Bing Ads</h3>
             </div>
             <p>Search & Display Network, Multi-engine Import & Synergies</p>
@@ -1391,7 +1412,7 @@ input[type="text"], input[type="email"], textarea, select {
 
           <div class="skill-card glass-card" data-category="paid-media">
             <div class="skill-header">
-              <div class="skill-icon-bg bg-linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="skill-icon-bg bg-linkedin">in</div>
               <h3>LinkedIn Ads</h3>
             </div>
             <p>B2B Lead Generation Forms, Sponsored Content & C-Suite Targeting</p>
@@ -1402,7 +1423,9 @@ input[type="text"], input[type="email"], textarea, select {
           <!-- Analytics & Tracking -->
           <div class="skill-card glass-card" data-category="analytics">
             <div class="skill-header">
-              <div class="skill-icon-bg bg-cyan"><i class="fa-solid fa-tags"></i></div>
+              <div class="skill-icon-bg bg-cyan">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"/><path d="M7 7h.01"/></svg>
+              </div>
               <h3>Google Tag Manager (GTM)</h3>
             </div>
             <p>Event Triggers, Custom JS Variables, Server-Side Setup & Data Layer</p>
@@ -1412,7 +1435,9 @@ input[type="text"], input[type="email"], textarea, select {
 
           <div class="skill-card glass-card" data-category="analytics">
             <div class="skill-header">
-              <div class="skill-icon-bg bg-orange"><i class="fa-solid fa-chart-column"></i></div>
+              <div class="skill-icon-bg bg-orange">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>
+              </div>
               <h3>GA4 & Enhanced Conversions</h3>
             </div>
             <p>Custom Exploration Reports, First-Party Data Tracking & Attribution</p>
@@ -1422,7 +1447,9 @@ input[type="text"], input[type="email"], textarea, select {
 
           <div class="skill-card glass-card" data-category="analytics">
             <div class="skill-header">
-              <div class="skill-icon-bg bg-teal"><i class="fa-solid fa-table-columns"></i></div>
+              <div class="skill-icon-bg bg-teal">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+              </div>
               <h3>Looker Studio & SA360</h3>
             </div>
             <p>Client KPI Dashboards, Data Blending & 6 Months Search Ads 360 Experience</p>
@@ -1433,7 +1460,9 @@ input[type="text"], input[type="email"], textarea, select {
           <!-- Strategy & CRO -->
           <div class="skill-card glass-card" data-category="competencies">
             <div class="skill-header">
-              <div class="skill-icon-bg bg-green"><i class="fa-solid fa-funnel-dollar"></i></div>
+              <div class="skill-icon-bg bg-green">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12A10 10 0 1 1 12 2v10z"/></svg>
+              </div>
               <h3>Landing Page CRO & Wireframing</h3>
             </div>
             <p>Frictionless Lead Funnel Wireframing & Dev Team Coordination</p>
@@ -1443,7 +1472,9 @@ input[type="text"], input[type="email"], textarea, select {
 
           <div class="skill-card glass-card" data-category="competencies">
             <div class="skill-header">
-              <div class="skill-icon-bg bg-purple"><i class="fa-solid fa-calendar-days"></i></div>
+              <div class="skill-icon-bg bg-purple">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+              </div>
               <h3>Social Content Calendar Planning</h3>
             </div>
             <p>Monthly Content Strategy & Creative Direction for SaaS, Restaurants, Interior Design</p>
@@ -1454,7 +1485,9 @@ input[type="text"], input[type="email"], textarea, select {
           <!-- 16 Verticals Card -->
           <div class="skill-card glass-card" data-category="verticals">
             <div class="skill-header">
-              <div class="skill-icon-bg bg-gold"><i class="fa-solid fa-city"></i></div>
+              <div class="skill-icon-bg bg-gold">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+              </div>
               <h3>16 Industry Verticals Covered</h3>
             </div>
             <div class="tags-cloud mt-2">
@@ -1499,11 +1532,14 @@ input[type="text"], input[type="email"], textarea, select {
               <div class="role-header">
                 <div>
                   <h3 class="role-title">Performance Marketer & Team Lead</h3>
-                  <h4 class="company-name"><i class="fa-solid fa-building"></i> Business Thrust Tech Soft Pvt. Ltd.</h4>
+                  <h4 class="company-name">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/></svg>
+                    Business Thrust Tech Soft Pvt. Ltd.
+                  </h4>
                 </div>
                 <div class="role-meta">
-                  <span class="role-date"><i class="fa-solid fa-calendar"></i> Mar 2024 – Present</span>
-                  <span class="role-location"><i class="fa-solid fa-location-dot"></i> Noida, India (Serving SG & MY)</span>
+                  <span class="role-date">Mar 2024 – Present</span>
+                  <span class="role-location">Noida, India (Serving SG & MY)</span>
                 </div>
               </div>
               <ul class="role-points">
@@ -1531,11 +1567,14 @@ input[type="text"], input[type="email"], textarea, select {
               <div class="role-header">
                 <div>
                   <h3 class="role-title">Performance Marketing Executive / Analyst</h3>
-                  <h4 class="company-name"><i class="fa-solid fa-building"></i> Merkle B2B APAC</h4>
+                  <h4 class="company-name">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/></svg>
+                    Merkle B2B APAC
+                  </h4>
                 </div>
                 <div class="role-meta">
-                  <span class="role-date"><i class="fa-solid fa-calendar"></i> Jan 2024 – Mar 2024</span>
-                  <span class="role-location"><i class="fa-solid fa-location-dot"></i> Bengaluru, India</span>
+                  <span class="role-date">Jan 2024 – Mar 2024</span>
+                  <span class="role-location">Bengaluru, India</span>
                 </div>
               </div>
               <ul class="role-points">
@@ -1557,11 +1596,14 @@ input[type="text"], input[type="email"], textarea, select {
               <div class="role-header">
                 <div>
                   <h3 class="role-title">PPC Manager</h3>
-                  <h4 class="company-name"><i class="fa-solid fa-building"></i> Nextera Business Solutions</h4>
+                  <h4 class="company-name">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/></svg>
+                    Nextera Business Solutions
+                  </h4>
                 </div>
                 <div class="role-meta">
-                  <span class="role-date"><i class="fa-solid fa-calendar"></i> Jul 2023 – Dec 2023</span>
-                  <span class="role-location"><i class="fa-solid fa-location-dot"></i> Noida, India</span>
+                  <span class="role-date">Jul 2023 – Dec 2023</span>
+                  <span class="role-location">Noida, India</span>
                 </div>
               </div>
               <ul class="role-points">
@@ -1584,11 +1626,14 @@ input[type="text"], input[type="email"], textarea, select {
               <div class="role-header">
                 <div>
                   <h3 class="role-title">PPC Analyst & Executive</h3>
-                  <h4 class="company-name"><i class="fa-solid fa-building"></i> Ninja Marketing Tech</h4>
+                  <h4 class="company-name">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/></svg>
+                    Ninja Marketing Tech
+                  </h4>
                 </div>
                 <div class="role-meta">
-                  <span class="role-date"><i class="fa-solid fa-calendar"></i> Jan 2021 – Jul 2023</span>
-                  <span class="role-location"><i class="fa-solid fa-location-dot"></i> Mohali, India</span>
+                  <span class="role-date">Jan 2021 – Jul 2023</span>
+                  <span class="role-location">Mohali, India</span>
                 </div>
               </div>
               <ul class="role-points">
@@ -1618,28 +1663,36 @@ input[type="text"], input[type="email"], textarea, select {
 
         <div class="achievements-grid">
           <div class="achievement-card glass-card">
-            <div class="achieve-icon bg-green"><i class="fa-solid fa-sack-dollar"></i></div>
+            <div class="achieve-icon bg-green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
             <h3>SGD 150K Monthly Budget</h3>
             <p class="achieve-value">SGD 150,000 / Month</p>
             <p class="achieve-desc">Independently overseeing SGD 150K monthly advertising spend across 30+ Singapore and Malaysia B2B and D2C client accounts.</p>
           </div>
 
           <div class="achievement-card glass-card">
-            <div class="achieve-icon bg-blue"><i class="fa-solid fa-folder-open"></i></div>
+            <div class="achieve-icon bg-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"/></svg>
+            </div>
             <h3>30+ Active Projects</h3>
             <p class="achieve-value">Independent Management</p>
             <p class="achieve-desc">Architecting performance campaigns for SaaS, Interior Design, Restaurants, Real Estate, Healthcare, and E-commerce.</p>
           </div>
 
           <div class="achievement-card glass-card">
-            <div class="achieve-icon bg-purple"><i class="fa-solid fa-users"></i></div>
+            <div class="achieve-icon bg-purple">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
             <h3>Team Leadership</h3>
             <p class="achieve-value">Mentoring 4 Marketers</p>
             <p class="achieve-desc">Leading campaign execution, QA deliverables, professional development, and cross-functional creative coordination.</p>
           </div>
 
           <div class="achievement-card glass-card">
-            <div class="achieve-icon bg-orange"><i class="fa-solid fa-globe"></i></div>
+            <div class="achieve-icon bg-orange">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
             <h3>Global Market Scale</h3>
             <p class="achieve-value">8 Global Regions</p>
             <p class="achieve-desc">Proven performance results across US, Canada, Australia, NZ, Europe, Singapore, Malaysia, and India.</p>
@@ -1660,30 +1713,39 @@ input[type="text"], input[type="email"], textarea, select {
         <div class="contact-grid">
           
           <div class="contact-info-card glass-card">
-            <h3><i class="fa-solid fa-comments text-cyan"></i> Direct Contact Info</h3>
+            <h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Direct Contact Info
+            </h3>
             <p>I am available for full-time opportunities, performance audits, high-budget campaign management, and growth consulting.</p>
 
             <div class="contact-methods">
               <div class="method-item">
-                <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="method-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
                 <div class="method-details">
                   <span class="method-lbl">Email Address</span>
                   <a href="mailto:rajeshnirmal444@gmail.com" class="method-val">rajeshnirmal444@gmail.com</a>
-                  <button class="copy-btn" data-copy="rajeshnirmal444@gmail.com"><i class="fa-solid fa-copy"></i> Copy</button>
+                  <button class="copy-btn" data-copy="rajeshnirmal444@gmail.com">Copy</button>
                 </div>
               </div>
 
               <div class="method-item">
-                <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="method-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
                 <div class="method-details">
                   <span class="method-lbl">Phone / WhatsApp</span>
                   <a href="tel:+918837882378" class="method-val">+91 8837882378</a>
-                  <button class="copy-btn" data-copy="+918837882378"><i class="fa-solid fa-copy"></i> Copy</button>
+                  <button class="copy-btn" data-copy="+918837882378">Copy</button>
                 </div>
               </div>
 
               <div class="method-item">
-                <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="method-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
                 <div class="method-details">
                   <span class="method-lbl">Location</span>
                   <span class="method-val">Noida, UP, India (Open to Remote & Global Clients)</span>
@@ -1695,18 +1757,31 @@ input[type="text"], input[type="email"], textarea, select {
             <div class="contact-social-box">
               <h4>Connect Across Channels:</h4>
               <div class="social-pills">
-                <a href="https://linkedin.com/in/rajeshnirmal" target="_blank" rel="noopener" class="s-pill linkedin"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
-                <a href="https://x.com/RajeshNirmal15" target="_blank" rel="noopener" class="s-pill twitter"><i class="fa-brands fa-x-twitter"></i> Twitter/X</a>
-                <a href="https://instagram.com/rajesh_nirmal444" target="_blank" rel="noopener" class="s-pill instagram"><i class="fa-brands fa-instagram"></i> Instagram</a>
-                <a href="https://www.facebook.com/profile.php?id=100005462175648" target="_blank" rel="noopener" class="s-pill facebook"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
-                <a href="https://join.skype.com/invite/xyMKShBhf3cp" target="_blank" rel="noopener" class="s-pill skype"><i class="fa-brands fa-skype"></i> Skype</a>
+                <a href="https://linkedin.com/in/rajeshnirmal" target="_blank" rel="noopener" class="s-pill linkedin">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg> LinkedIn
+                </a>
+                <a href="https://x.com/RajeshNirmal15" target="_blank" rel="noopener" class="s-pill twitter">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> Twitter/X
+                </a>
+                <a href="https://instagram.com/rajesh_nirmal444" target="_blank" rel="noopener" class="s-pill instagram">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg> Instagram
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100005462175648" target="_blank" rel="noopener" class="s-pill facebook">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook
+                </a>
+                <a href="https://join.skype.com/invite/xyMKShBhf3cp" target="_blank" rel="noopener" class="s-pill skype">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.001 0C5.372 0 0 5.372 0 12.001c0 2.378.705 4.59 1.916 6.444A11.96 11.96 0 0 0 0 12c0-6.627 5.373-12 12-12a11.96 11.96 0 0 1 6.444 1.916A11.943 11.943 0 0 0 12.001 0zm-.001 24c6.628 0 12.001-5.372 12.001-12a11.943 11.943 0 0 0-1.916-6.444A11.96 11.96 0 0 1 24 12c0 6.627-5.373 12-12 12a11.96 11.96 0 0 1-6.444-1.916A11.943 11.943 0 0 0 12 24zm4.81-8.736c0-2.613-2.12-3.738-4.237-4.256-1.572-.387-2.025-.795-2.025-1.42 0-.66.626-1.077 1.547-1.077 1.944 0 2.474 1.155 2.585 1.768.043.238.244.415.485.415h1.492a.5.5 0 0 0 .495-.536c-.161-2.115-1.85-3.328-4.262-3.328-2.607 0-4.301 1.488-4.301 3.256 0 2.228 1.782 3.407 4.237 3.972 1.572.361 2.025.86 2.025 1.503 0 .762-.756 1.181-1.722 1.181-1.925 0-2.619-.99-2.736-1.996a.5.5 0 0 0-.497-.442H7.868a.5.5 0 0 0-.496.559c.238 2.28 2.091 3.568 4.747 3.568 2.825 0 4.692-1.487 4.692-3.169z"/></svg> Skype
+                </a>
               </div>
             </div>
           </div>
 
           <!-- Contact Form Card -->
           <div class="contact-form-card glass-card">
-            <h3><i class="fa-solid fa-paper-plane text-green"></i> Send a Direct Message</h3>
+            <h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+              Send a Direct Message
+            </h3>
             <form id="contactForm" class="contact-form">
               <div class="form-row">
                 <div class="form-group">
@@ -1730,7 +1805,7 @@ input[type="text"], input[type="email"], textarea, select {
               </div>
 
               <button type="submit" class="btn btn-primary btn-block btn-glow">
-                <i class="fa-solid fa-paper-plane"></i> Send Message
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg> Send Message
               </button>
             </form>
           </div>
@@ -1752,7 +1827,7 @@ input[type="text"], input[type="email"], textarea, select {
       </div>
 
       <div class="footer-right">
-        <a href="#hero">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+        <a href="#hero">Back to top ↑</a>
       </div>
     </div>
   </footer>
@@ -1790,12 +1865,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const navList = mainNav.querySelector('.nav-links');
       const isActive = navList.classList.toggle('active');
       document.body.classList.toggle('nav-open', isActive);
-      const icon = mobileMenuBtn.querySelector('i');
-      if (isActive) {
-        icon.className = 'fa-solid fa-xmark';
-      } else {
-        icon.className = 'fa-solid fa-bars';
-      }
+      mobileMenuBtn.innerHTML = isActive 
+        ? '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>'
+        : '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>';
     });
 
     navLinks.forEach(link => {
@@ -1804,7 +1876,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (navList.classList.contains('active')) {
           navList.classList.remove('active');
           document.body.classList.remove('nav-open');
-          mobileMenuBtn.querySelector('i').className = 'fa-solid fa-bars';
+          mobileMenuBtn.innerHTML = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>';
         }
       });
     });
