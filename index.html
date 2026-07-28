@@ -246,12 +246,12 @@ ul {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1.5rem;
 }
 
 .nav-link {
   color: var(--text-muted);
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   font-weight: 500;
   padding: 0.5rem 0.75rem;
   border-radius: 8px;
@@ -535,8 +535,8 @@ ul {
 
 .profile-avatar-box {
   position: relative;
-  width: 130px;
-  height: 130px;
+  width: 150px;
+  height: 150px;
   margin: 0 auto 1.5rem auto;
 }
 
@@ -545,7 +545,9 @@ ul {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+  object-position: top center;
   border: 4px solid var(--bg-secondary);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
 .avatar-ring {
@@ -873,104 +875,6 @@ ul {
 .achieve-value { color: var(--accent-green); font-weight: 800; font-size: 1.1rem; margin-bottom: 0.75rem; }
 .achieve-desc { font-size: 0.9rem; color: var(--text-muted); }
 
-/* ROI Simulator */
-.simulator-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
-.sim-group { margin-bottom: 1.5rem; }
-.sim-group label { display: block; font-weight: 600; font-size: 0.95rem; margin-bottom: 0.5rem; }
-.sim-group label strong { color: var(--accent-secondary); font-size: 1.1rem; }
-input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: pointer; }
-.range-labels { display: flex; justify-content: space-between; font-size: 0.78rem; color: var(--text-muted); margin-top: 0.25rem; }
-
-.form-select {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  color: var(--text-main);
-  font-size: 0.92rem;
-  outline: none;
-}
-
-.sim-results {
-  background: rgba(0, 0, 0, 0.2);
-  border: 1px solid var(--border-color);
-  border-radius: 16px;
-  padding: 1.5rem;
-}
-
-.sim-results h3 { font-size: 1.1rem; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.5rem; }
-.sim-metrics-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
-.sim-box { background: var(--bg-card); border: 1px solid var(--border-color); padding: 1rem; border-radius: 12px; }
-.sim-box-lbl { font-size: 0.78rem; color: var(--text-muted); display: block; margin-bottom: 0.25rem; }
-.sim-box-val { font-size: 1.2rem; font-weight: 800; color: var(--text-main); }
-.box-highlight { border-color: rgba(16, 185, 129, 0.3); background: rgba(16, 185, 129, 0.05); }
-.box-highlight .sim-box-val { color: var(--accent-green); }
-.box-accent { grid-column: span 2; border-color: rgba(37, 99, 235, 0.4); background: rgba(37, 99, 235, 0.08); text-align: center; }
-.box-accent .sim-box-val { font-size: 1.6rem; color: var(--accent-secondary); }
-.sim-note { font-size: 0.78rem; color: var(--text-dim); line-height: 1.4; }
-
-/* Analytics Dashboard Preview */
-.dash-wrapper { padding: 1.5rem; }
-.dash-tabs { display: flex; gap: 0.75rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; overflow-x: auto; }
-.dash-tab {
-  background: none;
-  border: none;
-  color: var(--text-muted);
-  font-size: 0.95rem;
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  transition: all 0.2s ease;
-}
-.dash-tab.active, .dash-tab:hover { background: var(--accent-primary); color: white; }
-
-.dash-content {
-  background: var(--bg-secondary);
-  border-radius: 16px;
-  border: 1px solid var(--border-color);
-  padding: 1.5rem;
-}
-
-.dash-top-bar { display: flex; justify-content: space-between; font-size: 0.9rem; font-weight: 700; margin-bottom: 1.5rem; }
-.dash-date { color: var(--text-muted); font-weight: 500; }
-
-.dash-cards-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
-.d-card { background: var(--bg-card); border: 1px solid var(--border-color); padding: 1rem; border-radius: 12px; }
-.d-lbl { font-size: 0.8rem; color: var(--text-muted); display: block; }
-.d-val { font-size: 1.4rem; font-weight: 800; display: block; margin: 0.25rem 0; }
-.d-change { font-size: 0.78rem; font-weight: 600; }
-.positive { color: var(--accent-green); }
-
-.dash-chart-box { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem; }
-.dash-chart-box h4 { font-size: 0.95rem; margin-bottom: 1.5rem; color: var(--text-muted); }
-
-.chart-bars { display: flex; justify-content: space-around; align-items: flex-end; height: 180px; padding-top: 1rem; }
-.bar-col { display: flex; flex-direction: column; align-items: center; height: 100%; justify-content: flex-end; width: 14%; }
-.bar { width: 100%; max-width: 45px; background: var(--accent-primary); border-radius: 6px 6px 0 0; position: relative; transition: height 0.5s ease; }
-
-.bar:hover::after {
-  content: attr(data-val);
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--text-main);
-  color: var(--bg-primary);
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-size: 0.75rem;
-  white-space: nowrap;
-  font-weight: 700;
-}
-
-.highlight-bar { background: var(--gradient-main); }
-.bar-label { margin-top: 0.5rem; font-size: 0.8rem; color: var(--text-muted); }
-
 /* Contact Section */
 .contact-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 2rem; }
 .contact-info-card h3, .contact-form-card h3 { font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
@@ -1069,7 +973,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
   .hero-container { grid-template-columns: 1fr; text-align: center; }
   .hero-description { margin-left: auto; margin-right: auto; }
   .hero-buttons, .social-hero { justify-content: center; }
-  .about-grid, .contact-grid, .simulator-wrapper { grid-template-columns: 1fr; }
+  .about-grid, .contact-grid { grid-template-columns: 1fr; }
   .role-meta { align-items: flex-start; }
 }
 
@@ -1123,8 +1027,6 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
           <li><a href="#skills" class="nav-link"><i class="fa-solid fa-laptop-code"></i> Skills</a></li>
           <li><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
           <li><a href="#achievements" class="nav-link"><i class="fa-solid fa-trophy"></i> Achievements</a></li>
-          <li><a href="#simulator" class="nav-link"><i class="fa-solid fa-calculator"></i> ROI Simulator</a></li>
-          <li><a href="#dashboard" class="nav-link"><i class="fa-solid fa-chart-line"></i> Analytics</a></li>
           <li><a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
         </ul>
       </nav>
@@ -1165,11 +1067,11 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
           </p>
 
           <div class="hero-buttons">
-            <a href="#simulator" class="btn btn-primary btn-glow">
-              <i class="fa-solid fa-calculator"></i> Campaign ROI Calculator
+            <a href="#experience" class="btn btn-primary btn-glow">
+              <i class="fa-solid fa-briefcase"></i> View Experience
             </a>
-            <a href="#experience" class="btn btn-secondary">
-              <i class="fa-solid fa-file-lines"></i> View Career History
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-solid fa-envelope"></i> Get In Touch
             </a>
             <button class="btn btn-outline" id="downloadResumeBtn">
               <i class="fa-solid fa-download"></i> Save Portfolio PDF
@@ -1193,7 +1095,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
             <div class="profile-card-glass">
               <div class="profile-avatar-box">
                 <div class="avatar-ring"></div>
-                <img src="https://ui-avatars.com/api/?name=Rajesh+Nirmal&size=200&background=0284c7&color=ffffff&bold=true&font-size=0.35" alt="Rajesh Nirmal" class="profile-img">
+                <img src="assets/rajesh-nirmal.jpg" alt="Rajesh Nirmal - Performance Marketer" class="profile-img">
                 <span class="verified-badge"><i class="fa-solid fa-check"></i></span>
               </div>
               <h3 class="profile-name">Rajesh Nirmal</h3>
@@ -1662,147 +1564,6 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
       </div>
     </section>
 
-    <!-- INTERACTIVE ROI SIMULATOR SECTION -->
-    <section class="section simulator-section" id="simulator">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-badge">Interactive Tool</span>
-          <h2 class="section-title">Paid Media Campaign ROI Calculator</h2>
-          <p class="section-subtitle">Simulate estimated lead volume, CPA, and ROAS based on Rajesh's benchmarks</p>
-        </div>
-
-        <div class="simulator-wrapper glass-card">
-          <div class="sim-controls">
-            <div class="sim-group">
-              <label for="monthlySpend">Monthly Ad Spend ($USD): <strong id="spendVal">$10,000</strong></label>
-              <input type="range" id="monthlySpend" min="1000" max="100000" step="1000" value="10000">
-              <div class="range-labels">
-                <span>$1K</span>
-                <span>$50K</span>
-                <span>$100K+</span>
-              </div>
-            </div>
-
-            <div class="sim-group">
-              <label for="channelSelect">Primary Ad Network Strategy:</label>
-              <select id="channelSelect" class="form-select">
-                <option value="google">Google Search & Performance Max (High Intent)</option>
-                <option value="meta">Meta Ads (Facebook & Instagram - Full Funnel)</option>
-                <option value="linkedin">LinkedIn Ads (B2B SaaS / C-Suite Decision Makers)</option>
-                <option value="omnichannel" selected>Omnichannel Strategy (Google + Meta)</option>
-              </select>
-            </div>
-
-            <div class="sim-group">
-              <label for="industrySelect">Industry Vertical:</label>
-              <select id="industrySelect" class="form-select">
-                <option value="saas">B2B SaaS / Tech</option>
-                <option value="interior">Interior Design / Home Services</option>
-                <option value="ecommerce">D2C & E-Commerce</option>
-                <option value="restaurant">Restaurants & Hospitality</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="sim-results">
-            <h3><i class="fa-solid fa-chart-line text-green"></i> Projected Campaign Outputs</h3>
-
-            <div class="sim-metrics-grid">
-              <div class="sim-box">
-                <span class="sim-box-lbl">Est. Monthly Impressions</span>
-                <span class="sim-box-val" id="resImpressions">250,000</span>
-              </div>
-
-              <div class="sim-box">
-                <span class="sim-box-lbl">Est. Clicks (CTR)</span>
-                <span class="sim-box-val" id="resClicks">10,000 (4.0%)</span>
-              </div>
-
-              <div class="sim-box box-highlight">
-                <span class="sim-box-lbl">Est. Qualified Leads</span>
-                <span class="sim-box-val" id="resConversions">500</span>
-              </div>
-
-              <div class="sim-box box-highlight">
-                <span class="sim-box-lbl">Target CPA (Cost Per Lead)</span>
-                <span class="sim-box-val" id="resCPA">$20.00</span>
-              </div>
-
-              <div class="sim-box box-accent">
-                <span class="sim-box-lbl">Projected ROAS (Return On Ad Spend)</span>
-                <span class="sim-box-val" id="resROAS">4.2x</span>
-              </div>
-            </div>
-
-            <p class="sim-note">
-              <i class="fa-solid fa-circle-info"></i> *Projections based on historical performance benchmarks across Rajesh's managed accounts in Singapore, Malaysia, and US.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- LIVE DASHBOARD PREVIEW SECTION -->
-    <section class="section dashboard-section" id="dashboard">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-badge">Analytics Showcase</span>
-          <h2 class="section-title">Looker Studio & GA4 Reporting Framework</h2>
-          <p class="section-subtitle">Real-time performance dashboard visualization framework designed for clients</p>
-        </div>
-
-        <div class="dash-wrapper glass-card">
-          <div class="dash-tabs">
-            <button class="dash-tab active" data-dash="google"><i class="fa-brands fa-google"></i> Google Ads Overview</button>
-            <button class="dash-tab" data-dash="meta"><i class="fa-brands fa-meta"></i> Meta Ads Lead Funnel</button>
-            <button class="dash-tab" data-dash="ga4"><i class="fa-solid fa-chart-bar"></i> GA4 Enhanced Conversions</button>
-          </div>
-
-          <div class="dash-content" id="dashContent">
-            <div class="dash-top-bar">
-              <span class="dash-title" id="dashTitle">Google Ads Performance Suite - B2B & D2C Live Report</span>
-              <span class="dash-date"><i class="fa-solid fa-clock"></i> Updated: Live Demo</span>
-            </div>
-
-            <div class="dash-cards-row">
-              <div class="d-card">
-                <span class="d-lbl">Total Ad Spend</span>
-                <span class="d-val" id="dSpend">SGD 48,500.00</span>
-                <span class="d-change positive"><i class="fa-solid fa-arrow-up"></i> +14.2% MoM</span>
-              </div>
-              <div class="d-card">
-                <span class="d-lbl">Qualified Leads</span>
-                <span class="d-val" id="dConversions">1,920</span>
-                <span class="d-change positive"><i class="fa-solid fa-arrow-up"></i> +21.4% MoM</span>
-              </div>
-              <div class="d-card">
-                <span class="d-lbl">Avg Cost Per Lead (CPA)</span>
-                <span class="d-val" id="dCPA">SGD 25.26</span>
-                <span class="d-change positive"><i class="fa-solid fa-arrow-down"></i> -11.5% CPA</span>
-              </div>
-              <div class="d-card">
-                <span class="d-lbl">Blended ROAS</span>
-                <span class="d-val" id="dROAS">4.92x</span>
-                <span class="d-change positive"><i class="fa-solid fa-arrow-up"></i> +0.7x</span>
-              </div>
-            </div>
-
-            <div class="dash-chart-box">
-              <h4>Monthly Conversion & CPA Trend (Looker Studio + GA4 Engine)</h4>
-              <div class="chart-bars" id="chartBars">
-                <div class="bar-col"><div class="bar" style="height: 45%;" data-val="1,200 Conv"></div><span class="bar-label">Jan</span></div>
-                <div class="bar-col"><div class="bar" style="height: 55%;" data-val="1,420 Conv"></div><span class="bar-label">Feb</span></div>
-                <div class="bar-col"><div class="bar" style="height: 68%;" data-val="1,680 Conv"></div><span class="bar-label">Mar</span></div>
-                <div class="bar-col"><div class="bar" style="height: 82%;" data-val="1,810 Conv"></div><span class="bar-label">Apr</span></div>
-                <div class="bar-col"><div class="bar highlight-bar" style="height: 96%;" data-val="1,920 Conv"></div><span class="bar-label">May</span></div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- CONTACT SECTION -->
     <section class="section contact-section" id="contact">
       <div class="container">
@@ -2084,149 +1845,6 @@ document.addEventListener('DOMContentLoaded', () => {
           card.style.display = 'none';
         }
       });
-    });
-  });
-
-  // Campaign ROI Simulator Logic
-  const monthlySpendInput = document.getElementById('monthlySpend');
-  const spendValLabel = document.getElementById('spendVal');
-  const channelSelect = document.getElementById('channelSelect');
-  const industrySelect = document.getElementById('industrySelect');
-
-  const resImpressions = document.getElementById('resImpressions');
-  const resClicks = document.getElementById('resClicks');
-  const resConversions = document.getElementById('resConversions');
-  const resCPA = document.getElementById('resCPA');
-  const resROAS = document.getElementById('resROAS');
-
-  function calculateROI() {
-    if (!monthlySpendInput) return;
-
-    const spend = parseInt(monthlySpendInput.value);
-    spendValLabel.textContent = `$${spend.toLocaleString()}`;
-
-    const channel = channelSelect.value;
-    const industry = industrySelect.value;
-
-    let cpm = 18;
-    let ctr = 0.038;
-    let convRate = 0.05;
-    let avgOrderValue = 180;
-
-    if (channel === 'google') {
-      cpm = 25;
-      ctr = 0.048;
-      convRate = 0.065;
-    } else if (channel === 'meta') {
-      cpm = 12;
-      ctr = 0.024;
-      convRate = 0.042;
-    } else if (channel === 'linkedin') {
-      cpm = 45;
-      ctr = 0.018;
-      convRate = 0.085;
-      avgOrderValue = 850;
-    } else {
-      cpm = 20;
-      ctr = 0.040;
-      convRate = 0.058;
-    }
-
-    if (industry === 'saas') {
-      avgOrderValue = 450;
-    } else if (industry === 'ecommerce') {
-      avgOrderValue = 95;
-      convRate += 0.015;
-    } else if (industry === 'interior') {
-      avgOrderValue = 900;
-      convRate = 0.038;
-    } else if (industry === 'restaurant') {
-      avgOrderValue = 120;
-    }
-
-    const impressions = Math.round((spend / cpm) * 1000);
-    const clicks = Math.round(impressions * ctr);
-    const conversions = Math.max(1, Math.round(clicks * convRate));
-    const cpa = (spend / conversions).toFixed(2);
-    const totalRevenue = conversions * avgOrderValue;
-    const roas = (totalRevenue / spend).toFixed(1);
-
-    resImpressions.textContent = impressions.toLocaleString();
-    resClicks.textContent = `${clicks.toLocaleString()} (${(ctr * 100).toFixed(1)}%)`;
-    resConversions.textContent = conversions.toLocaleString();
-    resCPA.textContent = `$${cpa}`;
-    resROAS.textContent = `${roas}x`;
-  }
-
-  if (monthlySpendInput) {
-    monthlySpendInput.addEventListener('input', calculateROI);
-    channelSelect.addEventListener('change', calculateROI);
-    industrySelect.addEventListener('change', calculateROI);
-    calculateROI();
-  }
-
-  // Dashboard Switcher
-  const dashTabs = document.querySelectorAll('.dash-tab');
-  const dashTitle = document.getElementById('dashTitle');
-  const dSpend = document.getElementById('dSpend');
-  const dConversions = document.getElementById('dConversions');
-  const dCPA = document.getElementById('dCPA');
-  const dROAS = document.getElementById('dROAS');
-  const chartBars = document.getElementById('chartBars');
-
-  const dashData = {
-    google: {
-      title: 'Google Ads Performance Suite - B2B & D2C Live Report',
-      spend: 'SGD 48,500.00',
-      conversions: '1,920',
-      cpa: 'SGD 25.26',
-      roas: '4.92x',
-      heights: ['45%', '55%', '68%', '82%', '96%'],
-      vals: ['1,200', '1,420', '1,680', '1,810', '1,920']
-    },
-    meta: {
-      title: 'Meta Ads Manager - Singapore & Malaysia Lead Acquisition',
-      spend: 'SGD 42,100.00',
-      conversions: '2,650',
-      cpa: 'SGD 15.88',
-      roas: '4.15x',
-      heights: ['52%', '65%', '78%', '88%', '95%'],
-      vals: ['1,450', '1,720', '2,100', '2,400', '2,650']
-    },
-    ga4: {
-      title: 'GA4 Enhanced Conversions & Lead Funnel Attribution',
-      spend: 'SGD 90,600.00 (Blended)',
-      conversions: '4,570',
-      cpa: 'SGD 19.82',
-      roas: '4.55x',
-      heights: ['42%', '62%', '72%', '90%', '98%'],
-      vals: ['2,250', '2,950', '3,400', '4,100', '4,570']
-    }
-  };
-
-  dashTabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      dashTabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-
-      const key = tab.getAttribute('data-dash');
-      const data = dashData[key];
-
-      if (data) {
-        dashTitle.textContent = data.title;
-        dSpend.textContent = data.spend;
-        dConversions.textContent = data.conversions;
-        dCPA.textContent = data.cpa;
-        dROAS.textContent = data.roas;
-
-        if (chartBars) {
-          const bars = chartBars.querySelectorAll('.bar');
-          bars.forEach((bar, idx) => {
-            bar.style.height = data.heights[idx];
-            bar.setAttribute('data-val', `${data.vals[idx]} Conv`);
-          });
-        }
-      }
     });
   });
 
