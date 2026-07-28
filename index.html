@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rajesh Nirmal | Senior Performance Marketer & PPC Specialist</title>
-  <meta name="description" content="Portfolio of Rajesh Nirmal - Senior Performance Marketer & PPC Specialist with 5+ years of experience managing $110K+ monthly ad budgets across Google Ads, Meta Ads, LinkedIn, and Bing Ads.">
-  <meta name="keywords" content="Rajesh Nirmal, Performance Marketer, PPC Specialist, Google Ads Manager, Meta Ads, GA4, Looker Studio, Growth Marketing, Paid Search, SA360">
+  <title>Rajesh Nirmal | Senior Performance Marketer & Paid Media Strategist</title>
+  <meta name="description" content="Portfolio of Rajesh Nirmal - Senior Performance Marketer managing 30+ projects independently with SGD 150K+ monthly budget across Google Ads, Meta Ads, GA4, GTM & CRO.">
+  <meta name="keywords" content="Rajesh Nirmal, Performance Marketer, Google Ads, Meta Ads, Lead Generation, GTM, GA4, Enhanced Conversions, Looker Studio, CRO, B2B SaaS, D2C">
   <meta name="author" content="Rajesh Nirmal">
 
   <!-- Open Graph / Social Media -->
-  <meta property="og:title" content="Rajesh Nirmal | Senior Performance Marketer & PPC Specialist">
-  <meta property="og:description" content="5+ Years Exp | $110K+ Monthly Ad Spend Managed | Google Ads, Meta Ads, LinkedIn Ads, GA4 & SA360 Expert">
+  <meta property="og:title" content="Rajesh Nirmal | Senior Performance Marketer & Paid Media Strategist">
+  <meta property="og:description" content="5+ Years Exp | 30+ Independent Projects | SGD 150K/Mo Managed | Google Ads, Meta Ads, GTM & Lead Gen Specialist">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://rajesh-nirmal.github.io/portfolio/">
 
@@ -30,10 +30,10 @@
 :root[data-theme="dark"] {
   --bg-primary: #0b0f19;
   --bg-secondary: #111827;
-  --bg-card: rgba(17, 24, 39, 0.7);
-  --bg-card-hover: rgba(31, 41, 55, 0.85);
+  --bg-card: rgba(17, 24, 39, 0.75);
+  --bg-card-hover: rgba(31, 41, 55, 0.9);
   --border-color: rgba(255, 255, 255, 0.08);
-  --border-color-glow: rgba(59, 130, 246, 0.3);
+  --border-color-glow: rgba(59, 130, 246, 0.35);
 
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
@@ -53,13 +53,13 @@
   --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
   --shadow-glow: 0 0 25px rgba(37, 99, 235, 0.35);
 
-  --nav-bg: rgba(11, 15, 25, 0.85);
+  --nav-bg: rgba(11, 15, 25, 0.88);
 }
 
 :root[data-theme="light"] {
   --bg-primary: #f8fafc;
   --bg-secondary: #f1f5f9;
-  --bg-card: rgba(255, 255, 255, 0.85);
+  --bg-card: rgba(255, 255, 255, 0.9);
   --bg-card-hover: rgba(255, 255, 255, 0.98);
   --border-color: rgba(0, 0, 0, 0.08);
   --border-color-glow: rgba(37, 99, 235, 0.3);
@@ -82,7 +82,7 @@
   --shadow-md: 0 10px 20px rgba(0, 0, 0, 0.08);
   --shadow-glow: 0 0 20px rgba(37, 99, 235, 0.2);
 
-  --nav-bg: rgba(248, 250, 252, 0.85);
+  --nav-bg: rgba(248, 250, 252, 0.88);
 }
 
 * {
@@ -195,7 +195,7 @@ ul {
   100% { transform: translate(-30px, 30px) scale(0.95); }
 }
 
-/* Header */
+/* Navigation Header */
 .site-header {
   position: fixed;
   top: 0;
@@ -246,12 +246,12 @@ ul {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .nav-link {
   color: var(--text-muted);
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   font-weight: 500;
   padding: 0.5rem 0.75rem;
   border-radius: 8px;
@@ -454,7 +454,7 @@ ul {
 }
 
 .hero-subtitle {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--text-muted);
   margin-bottom: 1.5rem;
@@ -471,9 +471,9 @@ ul {
 
 .hero-description {
   color: var(--text-muted);
-  font-size: 1.1rem;
+  font-size: 1.08rem;
   margin-bottom: 2rem;
-  max-width: 620px;
+  max-width: 630px;
 }
 
 .hero-buttons {
@@ -640,7 +640,7 @@ ul {
 /* Metrics Ticker Grid */
 .metrics-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
   margin-top: 3rem;
 }
@@ -661,26 +661,12 @@ ul {
   box-shadow: var(--shadow-glow);
 }
 
-.metric-icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 14px;
-  background: rgba(37, 99, 235, 0.12);
-  color: var(--accent-secondary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-  margin: 0 auto 1rem auto;
-}
-
 .metric-number {
   font-size: 2.4rem;
   font-weight: 800;
   background: var(--gradient-main);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  line-height: 1.2;
 }
 
 .metric-label { font-size: 0.95rem; font-weight: 700; color: var(--text-main); margin-top: 0.25rem; }
@@ -738,15 +724,21 @@ ul {
 .info-label { color: var(--text-muted); font-weight: 500; display: flex; align-items: center; gap: 0.5rem; }
 .info-val { font-weight: 600; color: var(--text-main); text-align: right; }
 
-.certs-card h3 { font-size: 1.2rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
-.cert-item { display: flex; gap: 0.85rem; align-items: center; padding: 0.75rem 0; border-bottom: 1px solid var(--border-color); }
-.cert-item:last-child { border-bottom: none; }
-.cert-icon { font-size: 1.6rem; }
-.meta-color { color: #0668e1; }
-.fb-color { color: #1877f2; }
-.ig-color { color: #e4405f; }
-.cert-item strong { font-size: 0.92rem; display: block; }
-.cert-item p { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0; }
+.responsibilities-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  color: var(--text-muted);
+  margin-bottom: 0.65rem;
+  font-size: 0.95rem;
+}
+
+.responsibilities-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent-green);
+  font-weight: bold;
+}
 
 /* Skills Section */
 .skill-tabs {
@@ -1132,7 +1124,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
           <li><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
           <li><a href="#achievements" class="nav-link"><i class="fa-solid fa-trophy"></i> Achievements</a></li>
           <li><a href="#simulator" class="nav-link"><i class="fa-solid fa-calculator"></i> ROI Simulator</a></li>
-          <li><a href="#dashboard" class="nav-link"><i class="fa-solid fa-chart-line"></i> Live Analytics</a></li>
+          <li><a href="#dashboard" class="nav-link"><i class="fa-solid fa-chart-line"></i> Analytics</a></li>
           <li><a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
         </ul>
       </nav>
@@ -1157,7 +1149,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
         <div class="hero-content">
           <div class="status-pill">
             <span class="pulse-dot"></span>
-            <span>Available for Growth Consulting & High-Scale Campaigns</span>
+            <span>Currently Overseeing 30+ Independent B2B & D2C Projects in SG & MY</span>
           </div>
 
           <h1 class="hero-title">
@@ -1169,18 +1161,18 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
           </h2>
 
           <p class="hero-description">
-            Results-driven Performance Marketing Strategist with <strong>5+ years of experience</strong> scaling high-ROI paid media campaigns across Google Ads, Meta Ads, LinkedIn Ads, and Bing Ads. Managed over <strong>$110K+ monthly ad spend ($1.5M+ annually)</strong> for global enterprise & B2B/B2C brands in the US, EU, APAC, and Australia.
+            Performance Marketing Specialist with <strong>5+ years of experience</strong> architecting high-ROI Google Ads, Meta Ads, and full-funnel lead acquisition strategies. Currently managing <strong>30+ projects independently</strong> with a monthly ad spend of <strong>SGD 150,000 (~$112K USD)</strong> while leading a high-performing team of 4 marketers across Singapore, Malaysia, US, and APAC markets.
           </p>
 
           <div class="hero-buttons">
             <a href="#simulator" class="btn btn-primary btn-glow">
-              <i class="fa-solid fa-calculator"></i> Test Campaign ROI Simulator
+              <i class="fa-solid fa-calculator"></i> Campaign ROI Calculator
             </a>
             <a href="#experience" class="btn btn-secondary">
-              <i class="fa-solid fa-file-lines"></i> View Work History
+              <i class="fa-solid fa-file-lines"></i> View Career History
             </a>
             <button class="btn btn-outline" id="downloadResumeBtn">
-              <i class="fa-solid fa-download"></i> Download Resume
+              <i class="fa-solid fa-download"></i> Save Portfolio PDF
             </button>
           </div>
 
@@ -1205,43 +1197,43 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
                 <span class="verified-badge"><i class="fa-solid fa-check"></i></span>
               </div>
               <h3 class="profile-name">Rajesh Nirmal</h3>
-              <p class="profile-role">Performance Marketer & PPC Specialist</p>
+              <p class="profile-role">Performance Marketer & Team Lead</p>
 
               <div class="profile-location">
-                <i class="fa-solid fa-location-dot"></i> Noida, Uttar Pradesh, India
+                <i class="fa-solid fa-location-dot"></i> Noida, UP, India (Serving SG, MY, US, AU & Global)
               </div>
 
               <div class="tags-cloud">
-                <span class="badge-tag">Google Ads Certified</span>
-                <span class="badge-tag">Meta Ads Specialist</span>
-                <span class="badge-tag">GA4 & GTM Pro</span>
-                <span class="badge-tag">SA360</span>
-                <span class="badge-tag">Looker Studio</span>
+                <span class="badge-tag">Google Ads Specialist</span>
+                <span class="badge-tag">Meta Ads Master</span>
+                <span class="badge-tag">GTM & GA4 Tracking</span>
+                <span class="badge-tag">Enhanced Conversions</span>
+                <span class="badge-tag">CRO & Wireframing</span>
               </div>
             </div>
 
             <!-- Floating Metric Chips -->
             <div class="floating-chip chip-1">
-              <div class="chip-icon bg-green"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="chip-icon bg-green"><i class="fa-solid fa-sack-dollar"></i></div>
               <div class="chip-info">
-                <span class="chip-val">$110K+ / Mo</span>
-                <span class="chip-lbl">Managed Budget</span>
+                <span class="chip-val">SGD 150K / Mo</span>
+                <span class="chip-lbl">Managed Ad Spend</span>
               </div>
             </div>
 
             <div class="floating-chip chip-2">
-              <div class="chip-icon bg-blue"><i class="fa-solid fa-bullseye"></i></div>
+              <div class="chip-icon bg-blue"><i class="fa-solid fa-folder-open"></i></div>
               <div class="chip-info">
-                <span class="chip-val">20+ Clients</span>
-                <span class="chip-lbl">Active Accounts</span>
+                <span class="chip-val">30+ Projects</span>
+                <span class="chip-lbl">Managed Independently</span>
               </div>
             </div>
 
             <div class="floating-chip chip-3">
-              <div class="chip-icon bg-purple"><i class="fa-solid fa-globe"></i></div>
+              <div class="chip-icon bg-purple"><i class="fa-solid fa-people-group"></i></div>
               <div class="chip-info">
-                <span class="chip-val">8+ Markets</span>
-                <span class="chip-lbl">US, EU, APAC, AU</span>
+                <span class="chip-val">Team Lead</span>
+                <span class="chip-lbl">Mentoring 4 Specialists</span>
               </div>
             </div>
           </div>
@@ -1252,31 +1244,27 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
       <div class="container">
         <div class="metrics-grid">
           <div class="metric-card">
-            <div class="metric-icon"><i class="fa-solid fa-sack-dollar"></i></div>
-            <div class="metric-number" data-target="110000" data-prefix="$" data-suffix="K+">0</div>
+            <div class="metric-number" data-target="150000" data-prefix="SGD " data-suffix="K/Mo">0</div>
             <div class="metric-label">Monthly Ad Spend Managed</div>
-            <div class="metric-sub">Across Google, Meta, Bing & LinkedIn</div>
+            <div class="metric-sub">Across Google Ads & Meta Ads</div>
           </div>
 
           <div class="metric-card">
-            <div class="metric-icon"><i class="fa-solid fa-calendar-check"></i></div>
+            <div class="metric-number" data-target="30" data-prefix="" data-suffix="+ Projects">0</div>
+            <div class="metric-label">Independent Active Projects</div>
+            <div class="metric-sub">Singapore & Malaysia B2B & D2C</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-number" data-target="4" data-prefix="Team of " data-suffix=" Members">0</div>
+            <div class="metric-label">Marketing Team Leadership</div>
+            <div class="metric-sub">Deliverables, Strategy & Mentorship</div>
+          </div>
+
+          <div class="metric-card">
             <div class="metric-number" data-target="5" data-prefix="" data-suffix="+ Years">0</div>
-            <div class="metric-label">Paid Media Experience</div>
-            <div class="metric-sub">Proven track record in B2B & B2C</div>
-          </div>
-
-          <div class="metric-card">
-            <div class="metric-icon"><i class="fa-solid fa-layer-group"></i></div>
-            <div class="metric-number" data-target="20" data-prefix="" data-suffix="+ Accounts">0</div>
-            <div class="metric-label">Simultaneous Accounts Overseen</div>
-            <div class="metric-sub">SaaS, Real Estate, Healthcare, E-com</div>
-          </div>
-
-          <div class="metric-card">
-            <div class="metric-icon"><i class="fa-solid fa-earth-americas"></i></div>
-            <div class="metric-number" data-target="8" data-prefix="" data-suffix="+ Countries">0</div>
-            <div class="metric-label">Global Markets Targetting</div>
-            <div class="metric-sub">US, Canada, AU, NZ, EU, SG, MY, IN</div>
+            <div class="metric-label">Performance Marketing Exp.</div>
+            <div class="metric-sub">Google, Meta, GTM, GA4, SA360</div>
           </div>
         </div>
       </div>
@@ -1286,41 +1274,44 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
     <section class="section about-section" id="about">
       <div class="container">
         <div class="section-header text-center">
-          <span class="section-badge">Professional Background</span>
-          <h2 class="section-title">About Me</h2>
-          <p class="section-subtitle">Data-driven performance marketer dedicated to scaling revenue through strategic paid media</p>
+          <span class="section-badge">Executive Profile</span>
+          <h2 class="section-title">About Me & Current Focus</h2>
+          <p class="section-subtitle">Specializing in full-funnel lead generation, conversion tracking, landing page CRO, and performance marketing</p>
         </div>
 
         <div class="about-grid">
           <div class="about-card glass-card">
-            <h3 class="card-heading"><i class="fa-solid fa-user-astronaut"></i> Executive Profile</h3>
+            <h3 class="card-heading"><i class="fa-solid fa-user-astronaut"></i> Professional Summary</h3>
             <p>
-              I am a <strong>Results-driven Performance Marketer with 5+ years of hands-on experience</strong> architecting, executing, and scaling paid advertising campaigns for global businesses across North America, Europe, Australia, and APAC.
+              I am a <strong>Performance Marketing Professional with 5+ years of hands-on experience</strong> specializing in Google Ads, Meta Ads, lead generation, paid media strategy, conversion tracking, and performance optimization across B2B and D2C businesses globally.
             </p>
             <p>
-              My core strength lies in <strong>full-funnel performance marketing strategy</strong> — bridging top-of-funnel brand awareness with hyper-targeted bottom-of-funnel lead generation and e-commerce conversions. By integrating high-converting ad creative with deep analytics setup in <strong>GA4, GTM, SA360, and Looker Studio</strong>, I transform raw ad dollars into predictable, profitable revenue growth.
+              Currently at <strong>Business Thrust Tech Soft Pvt. Ltd.</strong>, I independently manage over <strong>30+ Google Ads and Meta Ads projects</strong> for clients based in Singapore and Malaysia, overseeing an advertising budget of approximately <strong>SGD 150,000 per month</strong>. Beyond campaign management, I lead a team of 4 members, overseeing execution, reviewing deliverables, and supporting professional development.
+            </p>
+            <p>
+              Most of my career focuses on <strong>Lead Generation and Sales Campaigns</strong>, building acquisition funnels that enhance lead quality while driving down Cost Per Acquisition (CPA). I also lead landing page planning, wireframing, CRO recommendations, conversion tracking via GTM & GA4 Enhanced Conversions, and monthly social media content planning (Interior Design, Restaurants, Wedding Planning, SaaS).
             </p>
             
             <div class="highlight-boxes">
               <div class="h-box">
-                <i class="fa-solid fa-chart-pie"></i>
+                <i class="fa-solid fa-diagram-project"></i>
                 <div>
-                  <h4>Full-Funnel Paid Strategy</h4>
-                  <p>Search, Display, Performance Max, Video, & Retargeting</p>
+                  <h4>Lead Gen & Funnel Architect</h4>
+                  <p>Complete acquisition funnels for high-intent B2B & D2C leads</p>
                 </div>
               </div>
               <div class="h-box">
-                <i class="fa-solid fa-arrows-to-eye"></i>
+                <i class="fa-solid fa-vial-circle-check"></i>
                 <div>
-                  <h4>Conversion Optimization</h4>
-                  <p>Landing page CRO, negative keyword audits, A/B ad copy testing</p>
+                  <h4>GTM, GA4 & Tracking Pro</h4>
+                  <p>Enhanced Conversions, server-side events & attribution modeling</p>
                 </div>
               </div>
               <div class="h-box">
-                <i class="fa-solid fa-people-roof"></i>
+                <i class="fa-solid fa-pen-ruler"></i>
                 <div>
-                  <h4>Team & Account Leadership</h4>
-                  <p>Led 5-person PPC teams and client-facing growth strategy</p>
+                  <h4>Landing Page CRO & Content</h4>
+                  <p>Wireframing, CRO audits, and monthly social content calendars</p>
                 </div>
               </div>
             </div>
@@ -1328,41 +1319,32 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
 
           <div class="about-sidebar">
             <div class="glass-card info-list-card">
-              <h3><i class="fa-solid fa-address-card"></i> Quick Details</h3>
-              <ul class="info-list">
-                <li><span class="info-label"><i class="fa-solid fa-user"></i> Name:</span> <span class="info-val">Rajesh Nirmal</span></li>
-                <li><span class="info-label"><i class="fa-solid fa-briefcase"></i> Current Role:</span> <span class="info-val">Performance Marketer at Business Thrust Techsoft</span></li>
-                <li><span class="info-label"><i class="fa-solid fa-envelope"></i> Email:</span> <span class="info-val"><a href="mailto:rajeshnirmal444@gmail.com">rajeshnirmal444@gmail.com</a></span></li>
-                <li><span class="info-label"><i class="fa-solid fa-phone"></i> Phone:</span> <span class="info-val"><a href="tel:+918837882378">+91 8837882378</a></span></li>
-                <li><span class="info-label"><i class="fa-solid fa-location-dot"></i> Location:</span> <span class="info-val">Noida, Uttar Pradesh, India</span></li>
-                <li><span class="info-label"><i class="fa-solid fa-graduation-cap"></i> Education:</span> <span class="info-val">B.A. (Airlines, Tourism & Hospitality), CGC Landran</span></li>
-                <li><span class="info-label"><i class="fa-solid fa-globe"></i> Languages:</span> <span class="info-val">English (Professional), Hindi (Native)</span></li>
+              <h3><i class="fa-solid fa-list-check text-cyan"></i> Current Responsibilities</h3>
+              <ul class="responsibilities-list">
+                <li>Manage 30+ Google Ads & Meta Ads projects independently.</li>
+                <li>Manage ~SGD 150,000 monthly advertising budget.</li>
+                <li>Plan and optimize lead generation & sales campaigns.</li>
+                <li>Lead and mentor a 4-person performance marketing team.</li>
+                <li>Implement and troubleshoot tracking via GTM & GA4.</li>
+                <li>Design landing page strategy & coordinate with dev teams.</li>
+                <li>Create social media content calendars with creative teams.</li>
+                <li>Prepare performance reports and optimization roadmaps.</li>
+                <li>Serve B2B and D2C clients across SG, MY, US, AU, & EU.</li>
               </ul>
             </div>
 
-            <!-- Certifications Card -->
+            <!-- Global Markets Card -->
             <div class="glass-card certs-card">
-              <h3><i class="fa-solid fa-certificate text-gold"></i> Professional Certifications</h3>
-              <div class="cert-item">
-                <i class="fa-brands fa-meta cert-icon meta-color"></i>
-                <div>
-                  <strong>Meta Ads Manager Certified</strong>
-                  <p>Advanced Facebook & Instagram Campaign Architecture</p>
-                </div>
-              </div>
-              <div class="cert-item">
-                <i class="fa-brands fa-facebook cert-icon fb-color"></i>
-                <div>
-                  <strong>Facebook Marketing Professional</strong>
-                  <p>Audience Segmentation & Lookalike Modeling</p>
-                </div>
-              </div>
-              <div class="cert-item">
-                <i class="fa-brands fa-instagram cert-icon ig-color"></i>
-                <div>
-                  <strong>Instagram Growth & Paid Ads</strong>
-                  <p>Visual Storytelling & Reels Ad Formats</p>
-                </div>
+              <h3><i class="fa-solid fa-earth-americas text-gold"></i> Global Target Markets</h3>
+              <div class="tags-cloud mt-2">
+                <span class="badge-tag">Singapore</span>
+                <span class="badge-tag">Malaysia</span>
+                <span class="badge-tag">United States</span>
+                <span class="badge-tag">Canada</span>
+                <span class="badge-tag">Australia</span>
+                <span class="badge-tag">New Zealand</span>
+                <span class="badge-tag">Europe</span>
+                <span class="badge-tag">India</span>
               </div>
             </div>
           </div>
@@ -1375,32 +1357,30 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
       <div class="container">
         <div class="section-header text-center">
           <span class="section-badge">Expertise & Tools</span>
-          <h2 class="section-title">Technical Skills & Competencies</h2>
-          <p class="section-subtitle">Comprehensive mastery across paid media channels, tracking infrastructure, and optimization tactics</p>
+          <h2 class="section-title">Core Competencies & Stack</h2>
+          <p class="section-subtitle">Deep expertise in Google Ads, Meta Ads, GTM, GA4, CRO, and campaign architecture</p>
         </div>
 
         <!-- Filter Tabs -->
         <div class="skill-tabs" id="skillTabs">
-          <button class="tab-btn active" data-filter="all">All Skills</button>
-          <button class="tab-btn" data-filter="paid-media">Paid Media Platforms</button>
-          <button class="tab-btn" data-filter="analytics">Analytics & Reporting</button>
-          <button class="tab-btn" data-filter="competencies">Core Competencies</button>
-          <button class="tab-btn" data-filter="verticals">Industry Verticals</button>
+          <button class="tab-btn active" data-filter="all">All Expertise</button>
+          <button class="tab-btn" data-filter="paid-media">Primary Platforms</button>
+          <button class="tab-btn" data-filter="analytics">Analytics & Tracking</button>
+          <button class="tab-btn" data-filter="competencies">Strategy & CRO</button>
+          <button class="tab-btn" data-filter="verticals">16+ Industries</button>
         </div>
 
         <div class="skills-grid" id="skillsGrid">
 
-          <!-- Paid Media Card -->
+          <!-- Primary Platforms -->
           <div class="skill-card glass-card" data-category="paid-media">
             <div class="skill-header">
               <div class="skill-icon-bg bg-google"><i class="fa-brands fa-google"></i></div>
               <h3>Google Ads Suite</h3>
             </div>
-            <p>Search, Display, Video (YouTube), Shopping, Performance Max (PMax), Demand Gen</p>
-            <div class="skill-progress-bar">
-              <div class="progress-fill" style="width: 96%;"></div>
-            </div>
-            <div class="skill-foot"><span>Proficiency</span><span>96%</span></div>
+            <p>Search, Display, Performance Max (PMax), Shopping, Video, Demand Gen</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="width: 98%;"></div></div>
+            <div class="skill-foot"><span>Expertise</span><span>Primary Core</span></div>
           </div>
 
           <div class="skill-card glass-card" data-category="paid-media">
@@ -1408,23 +1388,9 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
               <div class="skill-icon-bg bg-meta"><i class="fa-brands fa-meta"></i></div>
               <h3>Meta Ads (FB & IG)</h3>
             </div>
-            <p>Full-Funnel Awareness, Retargeting, Lookalike Audiences, CBO, Advantage+ Campaigns</p>
-            <div class="skill-progress-bar">
-              <div class="progress-fill" style="width: 92%;"></div>
-            </div>
-            <div class="skill-foot"><span>Proficiency</span><span>92%</span></div>
-          </div>
-
-          <div class="skill-card glass-card" data-category="paid-media">
-            <div class="skill-header">
-              <div class="skill-icon-bg bg-linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
-              <h3>LinkedIn Ads</h3>
-            </div>
-            <p>B2B Decision Maker Targeting, Account-Based Marketing (ABM), Lead Gen Forms</p>
-            <div class="skill-progress-bar">
-              <div class="progress-fill" style="width: 88%;"></div>
-            </div>
-            <div class="skill-foot"><span>Proficiency</span><span>88%</span></div>
+            <p>Lead Gen, Catalog Sales, Retargeting, CBO, Advantage+ Creative Strategy</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="width: 96%;"></div></div>
+            <div class="skill-foot"><span>Expertise</span><span>Primary Core</span></div>
           </div>
 
           <div class="skill-card glass-card" data-category="paid-media">
@@ -1432,103 +1398,96 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
               <div class="skill-icon-bg bg-microsoft"><i class="fa-brands fa-microsoft"></i></div>
               <h3>Microsoft / Bing Ads</h3>
             </div>
-            <p>Search & Display Network, Audience Network, Multi-engine Import & Synergies</p>
-            <div class="skill-progress-bar">
-              <div class="progress-fill" style="width: 90%;"></div>
-            </div>
-            <div class="skill-foot"><span>Proficiency</span><span>90%</span></div>
+            <p>Search & Display Network, Multi-engine Import & Synergies</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+            <div class="skill-foot"><span>Proficiency</span><span>Working Knowledge</span></div>
           </div>
 
-          <!-- Analytics Card -->
-          <div class="skill-card glass-card" data-category="analytics">
+          <div class="skill-card glass-card" data-category="paid-media">
             <div class="skill-header">
-              <div class="skill-icon-bg bg-orange"><i class="fa-solid fa-chart-column"></i></div>
-              <h3>Google Analytics 4 (GA4)</h3>
+              <div class="skill-icon-bg bg-linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
+              <h3>LinkedIn Ads</h3>
             </div>
-            <p>Event Tracking, Custom Exploration Reports, Conversion Modeling & Attribution</p>
-            <div class="skill-progress-bar">
-              <div class="progress-fill" style="width: 94%;"></div>
-            </div>
-            <div class="skill-foot"><span>Proficiency</span><span>94%</span></div>
+            <p>B2B Lead Generation Forms, Sponsored Content & C-Suite Targeting</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+            <div class="skill-foot"><span>Proficiency</span><span>Working Knowledge</span></div>
           </div>
 
+          <!-- Analytics & Tracking -->
           <div class="skill-card glass-card" data-category="analytics">
             <div class="skill-header">
               <div class="skill-icon-bg bg-cyan"><i class="fa-solid fa-tags"></i></div>
               <h3>Google Tag Manager (GTM)</h3>
             </div>
-            <p>Custom Trigger Configuration, Server-Side Tagging, Data Layer Implementation</p>
-            <div class="skill-progress-bar">
-              <div class="progress-fill" style="width: 90%;"></div>
-            </div>
-            <div class="skill-foot"><span>Proficiency</span><span>90%</span></div>
+            <p>Event Triggers, Custom JS Variables, Server-Side Setup & Data Layer</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="width: 95%;"></div></div>
+            <div class="skill-foot"><span>Expertise</span><span>Advanced</span></div>
           </div>
 
           <div class="skill-card glass-card" data-category="analytics">
             <div class="skill-header">
-              <div class="skill-icon-bg bg-blue"><i class="fa-solid fa-chart-pie"></i></div>
-              <h3>Search Ads 360 (SA360)</h3>
+              <div class="skill-icon-bg bg-orange"><i class="fa-solid fa-chart-column"></i></div>
+              <h3>GA4 & Enhanced Conversions</h3>
             </div>
-            <p>Enterprise Search Engine Management, Automated Smart Bidding & Unified Reporting</p>
-            <div class="skill-progress-bar">
-              <div class="progress-fill" style="width: 85%;"></div>
-            </div>
-            <div class="skill-foot"><span>Proficiency</span><span>85%</span></div>
+            <p>Custom Exploration Reports, First-Party Data Tracking & Attribution</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="width: 95%;"></div></div>
+            <div class="skill-foot"><span>Expertise</span><span>Advanced</span></div>
           </div>
 
           <div class="skill-card glass-card" data-category="analytics">
             <div class="skill-header">
               <div class="skill-icon-bg bg-teal"><i class="fa-solid fa-table-columns"></i></div>
-              <h3>Looker Studio</h3>
+              <h3>Looker Studio & SA360</h3>
             </div>
-            <p>Custom Client Dashboards, Cross-Channel Data Blending, Automated Executive KPIs</p>
-            <div class="skill-progress-bar">
-              <div class="progress-fill" style="width: 95%;"></div>
-            </div>
-            <div class="skill-foot"><span>Proficiency</span><span>95%</span></div>
+            <p>Client KPI Dashboards, Data Blending & 6 Months Search Ads 360 Experience</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+            <div class="skill-foot"><span>Expertise</span><span>Advanced</span></div>
           </div>
 
-          <!-- Competencies Card -->
-          <div class="skill-card glass-card" data-category="competencies">
-            <div class="skill-header">
-              <div class="skill-icon-bg bg-purple"><i class="fa-solid fa-vial"></i></div>
-              <h3>PPC Strategy & A/B Testing</h3>
-            </div>
-            <p>Bid Optimization, Copywriting Iteration, Negative Keyword Audits, Quality Score Boost</p>
-            <div class="skill-progress-bar">
-              <div class="progress-fill" style="width: 95%;"></div>
-            </div>
-            <div class="skill-foot"><span>Proficiency</span><span>95%</span></div>
-          </div>
-
+          <!-- Strategy & CRO -->
           <div class="skill-card glass-card" data-category="competencies">
             <div class="skill-header">
               <div class="skill-icon-bg bg-green"><i class="fa-solid fa-funnel-dollar"></i></div>
-              <h3>CRO & Landing Page Opt.</h3>
+              <h3>Landing Page CRO & Wireframing</h3>
             </div>
-            <p>Heatmap Analysis, Funnel Friction Removal, CPA Reduction & CTR Improvement</p>
-            <div class="skill-progress-bar">
-              <div class="progress-fill" style="width: 91%;"></div>
-            </div>
-            <div class="skill-foot"><span>Proficiency</span><span>91%</span></div>
+            <p>Frictionless Lead Funnel Wireframing & Dev Team Coordination</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="width: 94%;"></div></div>
+            <div class="skill-foot"><span>Expertise</span><span>Advanced</span></div>
           </div>
 
-          <!-- Verticals Card -->
+          <div class="skill-card glass-card" data-category="competencies">
+            <div class="skill-header">
+              <div class="skill-icon-bg bg-purple"><i class="fa-solid fa-calendar-days"></i></div>
+              <h3>Social Content Calendar Planning</h3>
+            </div>
+            <p>Monthly Content Strategy & Creative Direction for SaaS, Restaurants, Interior Design</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+            <div class="skill-foot"><span>Expertise</span><span>Advanced</span></div>
+          </div>
+
+          <!-- 16 Verticals Card -->
           <div class="skill-card glass-card" data-category="verticals">
             <div class="skill-header">
               <div class="skill-icon-bg bg-gold"><i class="fa-solid fa-city"></i></div>
-              <h3>Industry Vertical Mastery</h3>
+              <h3>16 Industry Verticals Covered</h3>
             </div>
             <div class="tags-cloud mt-2">
-              <span class="badge-tag">B2B SaaS</span>
-              <span class="badge-tag">Real Estate</span>
+              <span class="badge-tag">SaaS</span>
+              <span class="badge-tag">Interior Design</span>
+              <span class="badge-tag">Restaurants</span>
+              <span class="badge-tag">Wedding Planning</span>
               <span class="badge-tag">Healthcare</span>
-              <span class="badge-tag">E-commerce</span>
-              <span class="badge-tag">Travel & Tourism</span>
-              <span class="badge-tag">Financial Services</span>
               <span class="badge-tag">Education</span>
-              <span class="badge-tag">Music Production</span>
-              <span class="badge-tag">Furniture & Decor</span>
+              <span class="badge-tag">Real Estate</span>
+              <span class="badge-tag">Construction</span>
+              <span class="badge-tag">Professional Services</span>
+              <span class="badge-tag">Logistics</span>
+              <span class="badge-tag">Security</span>
+              <span class="badge-tag">Retail</span>
+              <span class="badge-tag">E-commerce</span>
+              <span class="badge-tag">Hospitality</span>
+              <span class="badge-tag">Financial Services</span>
+              <span class="badge-tag">Home Services</span>
             </div>
           </div>
 
@@ -1542,71 +1501,44 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
         <div class="section-header text-center">
           <span class="section-badge">Career Journey</span>
           <h2 class="section-title">Professional Experience</h2>
-          <p class="section-subtitle">5+ years of continuous growth, leadership, and multi-channel marketing performance</p>
+          <p class="section-subtitle">5+ years of continuous growth across leading digital agencies and performance teams</p>
         </div>
 
         <div class="timeline">
 
-          <!-- Role 1 -->
+          <!-- Current Role -->
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content glass-card">
               <div class="role-header">
                 <div>
-                  <h3 class="role-title">Performance Marketer</h3>
-                  <h4 class="company-name"><i class="fa-solid fa-building"></i> Business Thrust Techsoft Pvt. Ltd.</h4>
+                  <h3 class="role-title">Performance Marketer & Team Lead</h3>
+                  <h4 class="company-name"><i class="fa-solid fa-building"></i> Business Thrust Tech Soft Pvt. Ltd.</h4>
                 </div>
                 <div class="role-meta">
-                  <span class="role-date"><i class="fa-solid fa-calendar"></i> Feb 2025 – Present</span>
-                  <span class="role-location"><i class="fa-solid fa-location-dot"></i> Noida, India</span>
+                  <span class="role-date"><i class="fa-solid fa-calendar"></i> Mar 2024 – Present</span>
+                  <span class="role-location"><i class="fa-solid fa-location-dot"></i> Noida, India (Serving SG & MY)</span>
                 </div>
               </div>
               <ul class="role-points">
-                <li>Lead end-to-end performance marketing strategy across Google Ads, Meta Ads, and Bing Ads for multiple client accounts, driving measurable ROI improvements through data-backed campaign optimization and iterative testing.</li>
-                <li>Architect full-funnel paid media campaigns spanning Search, Display, Video, Shopping, and Performance Max to meet lead generation and revenue targets across diverse B2B and B2C clients.</li>
-                <li>Build custom GA4 and Looker Studio dashboards to track conversion events, monitor KPIs, and surface actionable insights for clients and internal leadership.</li>
-                <li>Collaborate cross-functionally with creative and strategy teams to optimize ad copy, landing pages, and audience targeting for improved Quality Scores and lower cost-per-acquisition (CPA).</li>
+                <li>Manage over 30 Google Ads and Meta Ads projects independently for Singapore and Malaysia-based B2B and D2C clients, overseeing an advertising budget of ~SGD 150,000 per month.</li>
+                <li>Lead and mentor a team of 4 performance marketing specialists, coordinating campaign execution, reviewing deliverables, and supporting professional development.</li>
+                <li>Architect complete lead acquisition and sales funnels to improve lead quality and lower Cost Per Acquisition (CPA).</li>
+                <li>Implement and troubleshoot conversion tracking using GTM, GA4, and Enhanced Conversions.</li>
+                <li>Design landing page strategies, wireframes, and CRO recommendations while collaborating with internal development teams.</li>
+                <li>Create monthly social media content calendars and coordinate creative deliverables for Interior Design, Restaurants, Wedding Planning, and SaaS brands.</li>
               </ul>
               <div class="tags-cloud mt-3">
-                <span class="badge-tag">Google Ads</span>
-                <span class="badge-tag">Meta Ads</span>
-                <span class="badge-tag">GA4</span>
-                <span class="badge-tag">Looker Studio</span>
-                <span class="badge-tag">Lead Gen</span>
-                <span class="badge-tag">PMax</span>
+                <span class="badge-tag">30+ Projects</span>
+                <span class="badge-tag">SGD 150K/Mo Budget</span>
+                <span class="badge-tag">Team Lead (4 Members)</span>
+                <span class="badge-tag">Singapore & Malaysia</span>
+                <span class="badge-tag">GTM & GA4</span>
               </div>
             </div>
           </div>
 
           <!-- Role 2 -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content glass-card">
-              <div class="role-header">
-                <div>
-                  <h3 class="role-title">PPC Specialist</h3>
-                  <h4 class="company-name"><i class="fa-solid fa-building"></i> Business Thrust Techsoft Pvt. Ltd.</h4>
-                </div>
-                <div class="role-meta">
-                  <span class="role-date"><i class="fa-solid fa-calendar"></i> Mar 2024 – Feb 2025</span>
-                  <span class="role-location"><i class="fa-solid fa-location-dot"></i> Noida, India</span>
-                </div>
-              </div>
-              <ul class="role-points">
-                <li>Managed and optimized Google Ads and Meta Ads campaigns across multiple client accounts, achieving consistent month-over-month improvements in CTR, CPA, and ROAS.</li>
-                <li>Conducted granular keyword research, negative keyword audits, and competitor analysis to maximize ad relevance, improve Quality Scores, and minimize wasted spend.</li>
-                <li>Produced comprehensive weekly and monthly performance reports, translating complex campaign data into clear, actionable business insights for clients and stakeholders.</li>
-              </ul>
-              <div class="tags-cloud mt-3">
-                <span class="badge-tag">Keyword Audits</span>
-                <span class="badge-tag">ROAS Optimization</span>
-                <span class="badge-tag">Quality Score Boost</span>
-                <span class="badge-tag">Reporting</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Role 3 -->
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content glass-card">
@@ -1621,19 +1553,18 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
                 </div>
               </div>
               <ul class="role-points">
-                <li>Executed performance marketing campaigns for B2B APAC clients, leveraging Search Ads 360 (SA360) for cross-engine campaign management and unified reporting across search platforms.</li>
-                <li>Analyzed multi-market performance data to identify optimization opportunities, improving campaign efficiency and contributing to pipeline growth for enterprise clients.</li>
+                <li>Executed performance marketing campaigns for B2B APAC enterprise clients, leveraging Search Ads 360 (SA360) for cross-engine search management.</li>
+                <li>Analyzed multi-market search performance data to drive pipeline growth and improve keyword efficiency.</li>
               </ul>
               <div class="tags-cloud mt-3">
-                <span class="badge-tag">SA360</span>
+                <span class="badge-tag">Search Ads 360 (SA360)</span>
                 <span class="badge-tag">Enterprise B2B</span>
-                <span class="badge-tag">APAC Market</span>
-                <span class="badge-tag">Cross-Engine Analytics</span>
+                <span class="badge-tag">APAC Region</span>
               </div>
             </div>
           </div>
 
-          <!-- Role 4 -->
+          <!-- Role 3 -->
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content glass-card">
@@ -1648,21 +1579,19 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
                 </div>
               </div>
               <ul class="role-points">
-                <li>Managed 20+ client accounts across Google Ads, Meta Ads, and LinkedIn Ads with a combined monthly budget of INR 5 Lacs+, spanning Healthcare, Real Estate, Travel & Tourism, Financial Services, and Education verticals.</li>
-                <li>Led and mentored a team of 5 PPC specialists, owning performance targets, task delegation, and professional development to ensure consistent delivery against client KPIs.</li>
-                <li>Executed LinkedIn Ads campaigns for B2B Software Development and ERP solution clients, driving brand awareness and lead generation among targeted C-suite and decision-maker audiences.</li>
-                <li>Interfaced directly with 20+ clients on a daily basis to present performance results, align on strategy, and translate marketing performance into measurable business growth.</li>
+                <li>Managed 20+ client accounts across Google Ads, Meta Ads, and LinkedIn Ads in Healthcare, Real Estate, Travel, and Financial Services.</li>
+                <li>Built and mentored a 5-person PPC team, owning performance targets and client delivery.</li>
+                <li>Executed LinkedIn Ads campaigns targeting C-suite decision makers for B2B software and ERP solutions.</li>
               </ul>
               <div class="tags-cloud mt-3">
-                <span class="badge-tag">Team Leadership (5 Specialists)</span>
-                <span class="badge-tag">20+ Client Accounts</span>
-                <span class="badge-tag">LinkedIn B2B Ads</span>
-                <span class="badge-tag">C-Suite Communication</span>
+                <span class="badge-tag">PPC Manager</span>
+                <span class="badge-tag">20+ Accounts</span>
+                <span class="badge-tag">LinkedIn B2B</span>
               </div>
             </div>
           </div>
 
-          <!-- Role 5 -->
+          <!-- Role 4 -->
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content glass-card">
@@ -1677,16 +1606,13 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
                 </div>
               </div>
               <ul class="role-points">
-                <li>Managed $110K+ monthly ad spend across 12 Google Ads and 4 Bing Ads accounts for US, AU, and EU-based clients in B2B SaaS, software development tools, real estate, and moving industries.</li>
-                <li>Executed multi-format campaigns across Google Search, Display, Video, Discovery, Shopping, and Performance Max, driving performance improvements through rigorous A/B testing and bid strategy optimization.</li>
-                <li>Optimized Meta Ads campaigns across all funnel stages — Awareness, Consideration, and Conversion — improving ROAS through audience segmentation, lookalike targeting, and creative iteration.</li>
-                <li>Launched paid media career managing campaigns for international clients (US, AU, EU), building deep expertise in keyword research, ad copywriting, bid management, and performance analysis.</li>
+                <li>Managed $110K+ monthly ad spend across 12 Google Ads and 4 Bing Ads accounts for international clients in US, AU, and EU.</li>
+                <li>Executed multi-format campaigns across Google Search, Display, Video, Shopping, and PMax with full-funnel Meta retargeting.</li>
               </ul>
               <div class="tags-cloud mt-3">
-                <span class="badge-tag">$110K+ Monthly Budget</span>
-                <span class="badge-tag">US / AU / EU Accounts</span>
+                <span class="badge-tag">Google & Bing Ads</span>
+                <span class="badge-tag">US, AU, EU Markets</span>
                 <span class="badge-tag">B2B SaaS</span>
-                <span class="badge-tag">Multi-Format Strategy</span>
               </div>
             </div>
           </div>
@@ -1699,38 +1625,38 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
     <section class="section achievements-section" id="achievements">
       <div class="container">
         <div class="section-header text-center">
-          <span class="section-badge">Impact & Track Record</span>
+          <span class="section-badge">Impact & Metrics</span>
           <h2 class="section-title">Key Achievements</h2>
-          <p class="section-subtitle">Proven milestones delivering scale, leadership, and positive return on ad spend</p>
+          <p class="section-subtitle">Demonstrated track record of scale, leadership, and positive return on ad spend</p>
         </div>
 
         <div class="achievements-grid">
           <div class="achievement-card glass-card">
-            <div class="achieve-icon bg-blue"><i class="fa-solid fa-globe"></i></div>
-            <h3>Global Budget Scale</h3>
-            <p class="achieve-value">$110K+ Monthly Spend</p>
-            <p class="achieve-desc">Successfully scaled and optimized ad budgets for international brands spanning the US, Canada, Australia, New Zealand, Europe, Singapore, Malaysia, and India.</p>
+            <div class="achieve-icon bg-green"><i class="fa-solid fa-sack-dollar"></i></div>
+            <h3>SGD 150K Monthly Budget</h3>
+            <p class="achieve-value">SGD 150,000 / Month</p>
+            <p class="achieve-desc">Independently overseeing SGD 150K monthly advertising spend across 30+ Singapore and Malaysia B2B and D2C client accounts.</p>
           </div>
 
           <div class="achievement-card glass-card">
-            <div class="achieve-icon bg-green"><i class="fa-solid fa-layer-group"></i></div>
-            <h3>Multi-Account Management</h3>
-            <p class="achieve-value">20+ Active Accounts</p>
-            <p class="achieve-desc">Simultaneously managed 20+ accounts across Google, Meta, and LinkedIn with high client retention across 8+ vertical industries.</p>
+            <div class="achieve-icon bg-blue"><i class="fa-solid fa-folder-open"></i></div>
+            <h3>30+ Active Projects</h3>
+            <p class="achieve-value">Independent Management</p>
+            <p class="achieve-desc">Architecting performance campaigns for SaaS, Interior Design, Restaurants, Real Estate, Healthcare, and E-commerce.</p>
           </div>
 
           <div class="achievement-card glass-card">
             <div class="achieve-icon bg-purple"><i class="fa-solid fa-users"></i></div>
-            <h3>Team Leadership & Mentorship</h3>
-            <p class="achieve-value">5-Person PPC Team</p>
-            <p class="achieve-desc">Built, trained, and led a 5-person PPC specialist team at Nextera, instituting QA reporting standards and improving account ROI metrics.</p>
+            <h3>Team Leadership</h3>
+            <p class="achieve-value">Mentoring 4 Marketers</p>
+            <p class="achieve-desc">Leading campaign execution, QA deliverables, professional development, and cross-functional creative coordination.</p>
           </div>
 
           <div class="achievement-card glass-card">
-            <div class="achieve-icon bg-orange"><i class="fa-solid fa-diagram-project"></i></div>
-            <h3>Multi-Platform Mastery</h3>
-            <p class="achieve-value">4+ Ad Networks</p>
-            <p class="achieve-desc">Unified cross-engine campaign execution across Google Ads, Microsoft Bing Ads, Meta Ads (FB & IG), and LinkedIn Ads with GA4 & SA360 attribution.</p>
+            <div class="achieve-icon bg-orange"><i class="fa-solid fa-globe"></i></div>
+            <h3>Global Market Scale</h3>
+            <p class="achieve-value">8 Global Regions</p>
+            <p class="achieve-desc">Proven performance results across US, Canada, Australia, NZ, Europe, Singapore, Malaysia, and India.</p>
           </div>
         </div>
       </div>
@@ -1742,7 +1668,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
         <div class="section-header text-center">
           <span class="section-badge">Interactive Tool</span>
           <h2 class="section-title">Paid Media Campaign ROI Calculator</h2>
-          <p class="section-subtitle">Simulate estimated performance, lead generation, and ROAS based on Rajesh's benchmarks</p>
+          <p class="section-subtitle">Simulate estimated lead volume, CPA, and ROAS based on Rajesh's benchmarks</p>
         </div>
 
         <div class="simulator-wrapper glass-card">
@@ -1763,7 +1689,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
                 <option value="google">Google Search & Performance Max (High Intent)</option>
                 <option value="meta">Meta Ads (Facebook & Instagram - Full Funnel)</option>
                 <option value="linkedin">LinkedIn Ads (B2B SaaS / C-Suite Decision Makers)</option>
-                <option value="omnichannel" selected>Omnichannel Strategy (Google + Meta + LinkedIn)</option>
+                <option value="omnichannel" selected>Omnichannel Strategy (Google + Meta)</option>
               </select>
             </div>
 
@@ -1771,9 +1697,9 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
               <label for="industrySelect">Industry Vertical:</label>
               <select id="industrySelect" class="form-select">
                 <option value="saas">B2B SaaS / Tech</option>
-                <option value="ecommerce">E-Commerce & Retail</option>
-                <option value="realestate">Real Estate & Property</option>
-                <option value="healthcare">Healthcare & Services</option>
+                <option value="interior">Interior Design / Home Services</option>
+                <option value="ecommerce">D2C & E-Commerce</option>
+                <option value="restaurant">Restaurants & Hospitality</option>
               </select>
             </div>
           </div>
@@ -1793,12 +1719,12 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
               </div>
 
               <div class="sim-box box-highlight">
-                <span class="sim-box-lbl">Est. Leads / Conversions</span>
+                <span class="sim-box-lbl">Est. Qualified Leads</span>
                 <span class="sim-box-val" id="resConversions">500</span>
               </div>
 
               <div class="sim-box box-highlight">
-                <span class="sim-box-lbl">Target CPA (Cost Per Acquisition)</span>
+                <span class="sim-box-lbl">Target CPA (Cost Per Lead)</span>
                 <span class="sim-box-val" id="resCPA">$20.00</span>
               </div>
 
@@ -1809,7 +1735,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
             </div>
 
             <p class="sim-note">
-              <i class="fa-solid fa-circle-info"></i> *Projections based on historical performance benchmarks across Rajesh's managed client accounts. Actual results vary based on offer, landing page conversion rate, and target GEO.
+              <i class="fa-solid fa-circle-info"></i> *Projections based on historical performance benchmarks across Rajesh's managed accounts in Singapore, Malaysia, and US.
             </p>
           </div>
         </div>
@@ -1821,71 +1747,54 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
       <div class="container">
         <div class="section-header text-center">
           <span class="section-badge">Analytics Showcase</span>
-          <h2 class="section-title">Looker Studio & GA4 Reporting Preview</h2>
+          <h2 class="section-title">Looker Studio & GA4 Reporting Framework</h2>
           <p class="section-subtitle">Real-time performance dashboard visualization framework designed for clients</p>
         </div>
 
         <div class="dash-wrapper glass-card">
           <div class="dash-tabs">
-            <button class="dash-tab active" data-dash="google"><i class="fa-brands fa-google"></i> Google Ads Dashboard</button>
-            <button class="dash-tab" data-dash="meta"><i class="fa-brands fa-meta"></i> Meta Ads Overview</button>
-            <button class="dash-tab" data-dash="ga4"><i class="fa-solid fa-chart-bar"></i> GA4 Lead Funnel</button>
+            <button class="dash-tab active" data-dash="google"><i class="fa-brands fa-google"></i> Google Ads Overview</button>
+            <button class="dash-tab" data-dash="meta"><i class="fa-brands fa-meta"></i> Meta Ads Lead Funnel</button>
+            <button class="dash-tab" data-dash="ga4"><i class="fa-solid fa-chart-bar"></i> GA4 Enhanced Conversions</button>
           </div>
 
-          <!-- Dynamic Mock Graphic View -->
           <div class="dash-content" id="dashContent">
             <div class="dash-top-bar">
-              <span class="dash-title" id="dashTitle">Google Ads Performance Suite - Q3 Live Summary</span>
+              <span class="dash-title" id="dashTitle">Google Ads Performance Suite - B2B & D2C Live Report</span>
               <span class="dash-date"><i class="fa-solid fa-clock"></i> Updated: Live Demo</span>
             </div>
 
             <div class="dash-cards-row">
               <div class="d-card">
                 <span class="d-lbl">Total Ad Spend</span>
-                <span class="d-val" id="dSpend">$45,210.00</span>
-                <span class="d-change positive"><i class="fa-solid fa-arrow-up"></i> +12.4% MoM</span>
+                <span class="d-val" id="dSpend">SGD 48,500.00</span>
+                <span class="d-change positive"><i class="fa-solid fa-arrow-up"></i> +14.2% MoM</span>
               </div>
               <div class="d-card">
-                <span class="d-lbl">Total Conversions</span>
-                <span class="d-val" id="dConversions">1,840</span>
-                <span class="d-change positive"><i class="fa-solid fa-arrow-up"></i> +18.6% MoM</span>
+                <span class="d-lbl">Qualified Leads</span>
+                <span class="d-val" id="dConversions">1,920</span>
+                <span class="d-change positive"><i class="fa-solid fa-arrow-up"></i> +21.4% MoM</span>
               </div>
               <div class="d-card">
-                <span class="d-lbl">Avg. Cost Per Lead (CPA)</span>
-                <span class="d-val" id="dCPA">$24.57</span>
-                <span class="d-change positive"><i class="fa-solid fa-arrow-down"></i> -8.2% CPA</span>
+                <span class="d-lbl">Avg Cost Per Lead (CPA)</span>
+                <span class="d-val" id="dCPA">SGD 25.26</span>
+                <span class="d-change positive"><i class="fa-solid fa-arrow-down"></i> -11.5% CPA</span>
               </div>
               <div class="d-card">
                 <span class="d-lbl">Blended ROAS</span>
-                <span class="d-val" id="dROAS">4.85x</span>
-                <span class="d-change positive"><i class="fa-solid fa-arrow-up"></i> +0.6x</span>
+                <span class="d-val" id="dROAS">4.92x</span>
+                <span class="d-change positive"><i class="fa-solid fa-arrow-up"></i> +0.7x</span>
               </div>
             </div>
 
-            <!-- Simulated Visual Bar Chart -->
             <div class="dash-chart-box">
-              <h4>Monthly Conversion & CPA Trend (GA4 + Looker Studio Engine)</h4>
+              <h4>Monthly Conversion & CPA Trend (Looker Studio + GA4 Engine)</h4>
               <div class="chart-bars" id="chartBars">
-                <div class="bar-col">
-                  <div class="bar" style="height: 45%;" data-val="1,200 Conv"></div>
-                  <span class="bar-label">Jan</span>
-                </div>
-                <div class="bar-col">
-                  <div class="bar" style="height: 55%;" data-val="1,420 Conv"></div>
-                  <span class="bar-label">Feb</span>
-                </div>
-                <div class="bar-col">
-                  <div class="bar" style="height: 65%;" data-val="1,580 Conv"></div>
-                  <span class="bar-label">Mar</span>
-                </div>
-                <div class="bar-col">
-                  <div class="bar" style="height: 80%;" data-val="1,750 Conv"></div>
-                  <span class="bar-label">Apr</span>
-                </div>
-                <div class="bar-col">
-                  <div class="bar highlight-bar" style="height: 95%;" data-val="1,840 Conv"></div>
-                  <span class="bar-label">May</span>
-                </div>
+                <div class="bar-col"><div class="bar" style="height: 45%;" data-val="1,200 Conv"></div><span class="bar-label">Jan</span></div>
+                <div class="bar-col"><div class="bar" style="height: 55%;" data-val="1,420 Conv"></div><span class="bar-label">Feb</span></div>
+                <div class="bar-col"><div class="bar" style="height: 68%;" data-val="1,680 Conv"></div><span class="bar-label">Mar</span></div>
+                <div class="bar-col"><div class="bar" style="height: 82%;" data-val="1,810 Conv"></div><span class="bar-label">Apr</span></div>
+                <div class="bar-col"><div class="bar highlight-bar" style="height: 96%;" data-val="1,920 Conv"></div><span class="bar-label">May</span></div>
               </div>
             </div>
 
@@ -1899,15 +1808,15 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
       <div class="container">
         <div class="section-header text-center">
           <span class="section-badge">Get In Touch</span>
-          <h2 class="section-title">Let's Scale Your Paid Media</h2>
-          <p class="section-subtitle">Have a project, campaign audit, or performance marketing opportunity? Reach out directly!</p>
+          <h2 class="section-title">Let's Scale Your Paid Campaigns</h2>
+          <p class="section-subtitle">Have a project, account audit, or performance marketing opportunity? Reach out directly!</p>
         </div>
 
         <div class="contact-grid">
           
           <div class="contact-info-card glass-card">
             <h3><i class="fa-solid fa-comments text-cyan"></i> Direct Contact Info</h3>
-            <p>I am available for full-time opportunities, high-budget paid media consulting, performance audits, and strategy calls.</p>
+            <p>I am available for full-time opportunities, performance audits, high-budget campaign management, and growth consulting.</p>
 
             <div class="contact-methods">
               <div class="method-item">
@@ -1932,7 +1841,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
                 <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
                 <div class="method-details">
                   <span class="method-lbl">Location</span>
-                  <span class="method-val">Noida, Uttar Pradesh, India (Open to Remote / Global Clients)</span>
+                  <span class="method-val">Noida, UP, India (Open to Remote & Global Clients)</span>
                 </div>
               </div>
             </div>
@@ -1967,12 +1876,12 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
 
               <div class="form-group">
                 <label for="contactSubject">Subject / Monthly Budget</label>
-                <input type="text" id="contactSubject" placeholder="Google Ads Audit / Paid Media Consulting ($10k+/mo)">
+                <input type="text" id="contactSubject" placeholder="Google & Meta Ads Audit (SGD 10K+/mo)">
               </div>
 
               <div class="form-group">
                 <label for="contactMessage">Message *</label>
-                <textarea id="contactMessage" rows="5" required placeholder="Hi Rajesh, I'd like to discuss scaling our PPC campaigns..."></textarea>
+                <textarea id="contactMessage" rows="5" required placeholder="Hi Rajesh, I'd like to discuss scaling our B2B lead generation campaigns..."></textarea>
               </div>
 
               <button type="submit" class="btn btn-primary btn-block btn-glow">
@@ -1994,7 +1903,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent-primary); cursor: 
           <span class="logo-box">RN</span>
           <span class="logo-text">Rajesh <strong>Nirmal</strong></span>
         </a>
-        <p>&copy; 2026 Rajesh Nirmal. All rights reserved. Senior Performance Marketer & PPC Specialist.</p>
+        <p>&copy; 2026 Rajesh Nirmal. All rights reserved. Performance Marketing Strategist & Team Lead.</p>
       </div>
 
       <div class="footer-right">
@@ -2077,11 +1986,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const typingElement = document.getElementById('typingText');
   if (typingElement) {
     const roles = [
-      'Performance Marketer',
-      'Google PPC Specialist',
-      'Meta & LinkedIn Ads Expert',
-      'GA4 & Looker Studio Analyst',
-      'Growth & Paid Media Strategist'
+      'Performance Marketing Lead',
+      'Google & Meta Ads Specialist',
+      'Lead Gen & Conversion Funnel Architect',
+      'GTM & GA4 Tracking Pro',
+      'Landing Page & CRO Strategist'
     ];
     let roleIndex = 0;
     let charIndex = 0;
@@ -2228,11 +2137,11 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (industry === 'ecommerce') {
       avgOrderValue = 95;
       convRate += 0.015;
-    } else if (industry === 'realestate') {
-      avgOrderValue = 1200;
-      convRate = 0.032;
-    } else if (industry === 'healthcare') {
-      avgOrderValue = 350;
+    } else if (industry === 'interior') {
+      avgOrderValue = 900;
+      convRate = 0.038;
+    } else if (industry === 'restaurant') {
+      avgOrderValue = 120;
     }
 
     const impressions = Math.round((spend / cpm) * 1000);
@@ -2267,31 +2176,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const dashData = {
     google: {
-      title: 'Google Ads Performance Suite - Search & PMax Report',
-      spend: '$45,210.00',
-      conversions: '1,840',
-      cpa: '$24.57',
-      roas: '4.85x',
-      heights: ['45%', '55%', '65%', '80%', '95%'],
-      vals: ['1,200', '1,420', '1,580', '1,750', '1,840']
+      title: 'Google Ads Performance Suite - B2B & D2C Live Report',
+      spend: 'SGD 48,500.00',
+      conversions: '1,920',
+      cpa: 'SGD 25.26',
+      roas: '4.92x',
+      heights: ['45%', '55%', '68%', '82%', '96%'],
+      vals: ['1,200', '1,420', '1,680', '1,810', '1,920']
     },
     meta: {
-      title: 'Meta Ads Manager - Facebook & Instagram Full-Funnel',
-      spend: '$38,650.00',
-      conversions: '2,410',
-      cpa: '$16.03',
-      roas: '3.92x',
-      heights: ['50%', '60%', '75%', '85%', '90%'],
-      vals: ['1,400', '1,650', '1,900', '2,200', '2,410']
+      title: 'Meta Ads Manager - Singapore & Malaysia Lead Acquisition',
+      spend: 'SGD 42,100.00',
+      conversions: '2,650',
+      cpa: 'SGD 15.88',
+      roas: '4.15x',
+      heights: ['52%', '65%', '78%', '88%', '95%'],
+      vals: ['1,450', '1,720', '2,100', '2,400', '2,650']
     },
     ga4: {
-      title: 'GA4 Attribution & Conversion Exploration Funnel',
-      spend: '$83,860.00 (Blended)',
-      conversions: '4,250',
-      cpa: '$19.73',
-      roas: '4.42x',
-      heights: ['40%', '60%', '70%', '88%', '98%'],
-      vals: ['2,100', '2,800', '3,200', '3,900', '4,250']
+      title: 'GA4 Enhanced Conversions & Lead Funnel Attribution',
+      spend: 'SGD 90,600.00 (Blended)',
+      conversions: '4,570',
+      cpa: 'SGD 19.82',
+      roas: '4.55x',
+      heights: ['42%', '62%', '72%', '90%', '98%'],
+      vals: ['2,250', '2,950', '3,400', '4,100', '4,570']
     }
   };
 
@@ -2356,7 +2265,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Download Resume
+  // Download Resume / Print PDF
   const downloadResumeBtn = document.getElementById('downloadResumeBtn');
   if (downloadResumeBtn) {
     downloadResumeBtn.addEventListener('click', () => {
