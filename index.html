@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>Rajesh Nirmal | Senior Performance Marketer & Paid Media Strategist</title>
-  <meta name="description" content="Portfolio of Rajesh Nirmal - Senior Performance Marketer managing 30+ projects independently with SGD 150K+ monthly budget across Google Ads, Meta Ads, GA4, GTM & CRO.">
-  <meta name="keywords" content="Rajesh Nirmal, Performance Marketer, Google Ads, Meta Ads, Lead Generation, GTM, GA4, Enhanced Conversions, Looker Studio, CRO, B2B SaaS, D2C">
+  <meta name="description" content="Portfolio of Rajesh Nirmal - Senior Performance Marketer managing 30+ projects independently with SGD 150,000 monthly budget across Google Ads, Meta Ads, GA4, GTM & CRO.">
+  <meta name="keywords" content="Rajesh Nirmal, Performance Marketer, Google Ads, Meta Ads, Lead Generation, GTM, GA4, Enhanced Conversions, Looker Studio, Search Ads 360, SA360, CRO, B2B SaaS, D2C">
   <meta name="author" content="Rajesh Nirmal">
 
   <!-- Open Graph / Social Media -->
   <meta property="og:title" content="Rajesh Nirmal | Senior Performance Marketer & Paid Media Strategist">
-  <meta property="og:description" content="5+ Years Exp | 30+ Independent Projects | SGD 150K/Mo Managed | Google Ads, Meta Ads, GTM & Lead Gen Specialist">
+  <meta property="og:description" content="5+ Years Exp | 30+ Independent Projects | SGD 150,000/Mo Managed | Google Ads, Meta Ads, GTM & Lead Gen Specialist">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://rajesh-nirmal.github.io/portfolio/">
 
@@ -21,7 +21,7 @@
 
   <style>
 /* ==========================================================================
-   Rajesh Nirmal - Fully Responsive Mobile-Optimized Portfolio Stylesheet
+   Rajesh Nirmal - Portfolio Stylesheet (Metric Alignment & Official Logos)
    ========================================================================== */
 
 :root[data-theme="dark"] {
@@ -82,7 +82,7 @@
   --nav-bg: rgba(248, 250, 252, 0.92);
 }
 
-/* Prevent Horizontal Scroll Globally */
+/* Global Reset */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -331,7 +331,7 @@ svg {
   touch-action: manipulation;
 }
 
-/* Touch-Friendly Button System */
+/* Button System */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -404,7 +404,6 @@ svg {
   letter-spacing: 1px;
 }
 
-/* Fluid Typography Clamp */
 .section-title {
   font-size: clamp(1.8rem, 5.5vw, 2.5rem);
   font-weight: 800;
@@ -664,10 +663,6 @@ svg {
 .bg-green { background: var(--accent-green); }
 .bg-blue { background: var(--accent-primary); }
 .bg-purple { background: var(--accent-purple); }
-.bg-orange { background: #f97316; }
-.bg-cyan { background: var(--accent-secondary); }
-.bg-teal { background: #14b8a6; }
-.bg-gold { background: var(--accent-gold); }
 
 .chip-info { display: flex; flex-direction: column; }
 .chip-val { font-weight: 800; font-size: 0.88rem; color: var(--text-main); }
@@ -676,19 +671,24 @@ svg {
 /* Metrics Ticker Grid */
 .metrics-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.25rem;
-  margin-top: 2.5rem;
+  margin-top: 2.75rem;
 }
 
 .metric-card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 18px;
-  padding: 1.5rem;
+  border-radius: 20px;
+  padding: 1.6rem 1rem;
   text-align: center;
-  backdrop-filter: blur(12px);
-  transition: all 0.3s ease;
+  backdrop-filter: blur(14px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .metric-card:hover {
@@ -698,15 +698,30 @@ svg {
 }
 
 .metric-number {
-  font-size: clamp(2rem, 5vw, 2.4rem);
+  font-size: clamp(1.6rem, 2.2vw, 2.2rem);
   font-weight: 800;
+  line-height: 1.2;
+  white-space: nowrap;
+  letter-spacing: -0.5px;
   background: var(--gradient-main);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 0.35rem;
+  max-width: 100%;
 }
 
-.metric-label { font-size: 0.92rem; font-weight: 700; color: var(--text-main); margin-top: 0.2rem; }
-.metric-sub { font-size: 0.78rem; color: var(--text-muted); margin-top: 0.2rem; }
+.metric-label { 
+  font-size: 0.92rem; 
+  font-weight: 700; 
+  color: var(--text-main); 
+  margin-top: 0.25rem; 
+}
+
+.metric-sub { 
+  font-size: 0.8rem; 
+  color: var(--text-muted); 
+  margin-top: 0.2rem; 
+}
 
 /* About Section */
 .about-grid {
@@ -797,7 +812,7 @@ svg {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   gap: 1.25rem;
 }
 
@@ -805,21 +820,23 @@ svg {
 .skill-header { display: flex; align-items: center; gap: 0.85rem; margin-bottom: 0.75rem; }
 
 .skill-icon-bg {
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 1.2rem;
   flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  padding: 6px;
 }
 
-.bg-google { background: #ea4335; }
-.bg-meta { background: #0668e1; }
-.bg-linkedin { background: #0a66c2; }
-.bg-microsoft { background: #00a4ef; }
+.skill-icon-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 .skill-header h3 { font-size: 1.05rem; font-weight: 700; }
 .skill-card p { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem; flex-grow: 1; }
@@ -1004,6 +1021,12 @@ input[type="text"], input[type="email"], textarea, select {
 .toast-notification.show { transform: translateY(0); opacity: 1; }
 
 /* Responsive Media Queries */
+@media (max-width: 1100px) {
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 992px) {
   .hero-container { grid-template-columns: 1fr; text-align: center; }
   .hero-description { margin-left: auto; margin-right: auto; }
@@ -1043,7 +1066,6 @@ input[type="text"], input[type="email"], textarea, select {
     border-radius: 12px;
   }
 
-  /* 2x2 Responsive Metrics Grid */
   .metrics-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.85rem;
@@ -1052,7 +1074,7 @@ input[type="text"], input[type="email"], textarea, select {
     padding: 1.25rem 0.75rem;
   }
   .metric-number {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   .timeline::before { left: 10px; }
@@ -1129,7 +1151,7 @@ input[type="text"], input[type="email"], textarea, select {
         <div class="hero-content">
           <div class="status-pill">
             <span class="pulse-dot"></span>
-            <span>Currently Overseeing 30+ Independent B2B & D2C Projects in SG & MY</span>
+            <span>Currently Overseeing 30+ Projects | SGD 150,000 / Mo Budget in SG & MY</span>
           </div>
 
           <h1 class="hero-title">
@@ -1159,8 +1181,8 @@ input[type="text"], input[type="email"], textarea, select {
           <!-- Social Quick Links -->
           <div class="social-hero">
             <span class="social-label">Connect:</span>
-            <a href="https://linkedin.com/in/rajeshnirmal" target="_blank" rel="noopener" title="LinkedIn" class="social-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            <a href="https://www.linkedin.com/in/rajesh-nirmal-1476a0214/" target="_blank" rel="noopener" title="LinkedIn" class="social-icon">
+              <img src="assets/logo-linkedin.svg" alt="LinkedIn" style="width: 20px; height: 20px;">
             </a>
             <a href="https://x.com/RajeshNirmal15" target="_blank" rel="noopener" title="X / Twitter" class="social-icon">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
@@ -1199,8 +1221,8 @@ input[type="text"], input[type="email"], textarea, select {
                 <span class="badge-tag">Google Ads Specialist</span>
                 <span class="badge-tag">Meta Ads Master</span>
                 <span class="badge-tag">GTM & GA4 Tracking</span>
-                <span class="badge-tag">Enhanced Conversions</span>
-                <span class="badge-tag">CRO & Wireframing</span>
+                <span class="badge-tag">Looker Studio BI</span>
+                <span class="badge-tag">Search Ads 360</span>
               </div>
             </div>
 
@@ -1210,7 +1232,7 @@ input[type="text"], input[type="email"], textarea, select {
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
               </div>
               <div class="chip-info">
-                <span class="chip-val">SGD 150K / Mo</span>
+                <span class="chip-val">SGD 150,000 / Mo</span>
                 <span class="chip-lbl">Managed Ad Spend</span>
               </div>
             </div>
@@ -1241,29 +1263,31 @@ input[type="text"], input[type="email"], textarea, select {
       <!-- KEY METRICS TICKER -->
       <div class="container">
         <div class="metrics-grid">
-          <div class="metric-card">
-            <div class="metric-number" data-target="150000" data-prefix="SGD " data-suffix="K/Mo">0</div>
-            <div class="metric-label">Monthly Ad Spend Managed</div>
-            <div class="metric-sub">Across Google Ads & Meta Ads</div>
-          </div>
 
           <div class="metric-card">
-            <div class="metric-number" data-target="30" data-prefix="" data-suffix="+ Projects">0</div>
-            <div class="metric-label">Independent Active Projects</div>
+            <div class="metric-number" data-target="150000" data-prefix="SGD " data-suffix="">SGD 150,000</div>
+            <div class="metric-label">Monthly Ad Spend Managed</div>
             <div class="metric-sub">Singapore & Malaysia B2B & D2C</div>
           </div>
 
           <div class="metric-card">
-            <div class="metric-number" data-target="4" data-prefix="Team of " data-suffix=" Members">0</div>
-            <div class="metric-label">Marketing Team Leadership</div>
-            <div class="metric-sub">Deliverables, Strategy & Mentorship</div>
+            <div class="metric-number" data-target="30" data-prefix="" data-suffix="+">30+</div>
+            <div class="metric-label">Independent Active Projects</div>
+            <div class="metric-sub">Google Ads & Meta Ads</div>
           </div>
 
           <div class="metric-card">
-            <div class="metric-number" data-target="5" data-prefix="" data-suffix="+ Years">0</div>
-            <div class="metric-label">Performance Marketing Exp.</div>
+            <div class="metric-number" data-target="4" data-prefix="" data-suffix=" Members">4 Members</div>
+            <div class="metric-label">Performance Team Lead</div>
+            <div class="metric-sub">Deliverables, Strategy & QA</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-number" data-target="5" data-prefix="" data-suffix="+ Years">5+ Years</div>
+            <div class="metric-label">Performance Marketing</div>
             <div class="metric-sub">Google, Meta, GTM, GA4, SA360</div>
           </div>
+
         </div>
       </div>
     </section>
@@ -1274,7 +1298,7 @@ input[type="text"], input[type="email"], textarea, select {
         <div class="section-header text-center">
           <span class="section-badge">Executive Profile</span>
           <h2 class="section-title">About Me & Current Focus</h2>
-          <p class="section-subtitle">Specializing in full-funnel lead generation, conversion tracking, landing page CRO, and performance marketing</p>
+          <p class="section-subtitle">Specializing in full-funnel lead generation, conversion tracking, landing page CRO, and multi-channel paid media</p>
         </div>
 
         <div class="about-grid">
@@ -1290,7 +1314,7 @@ input[type="text"], input[type="email"], textarea, select {
               Currently at <strong>Business Thrust Tech Soft Pvt. Ltd.</strong>, I independently manage over <strong>30+ Google Ads and Meta Ads projects</strong> for clients based in Singapore and Malaysia, overseeing an advertising budget of approximately <strong>SGD 150,000 per month</strong>. Beyond campaign management, I lead a team of 4 members, overseeing execution, reviewing deliverables, and supporting professional development.
             </p>
             <p>
-              Most of my career focuses on <strong>Lead Generation and Sales Campaigns</strong>, building acquisition funnels that enhance lead quality while driving down Cost Per Acquisition (CPA). I also lead landing page planning, wireframing, CRO recommendations, conversion tracking via GTM & GA4 Enhanced Conversions, and monthly social media content planning (Interior Design, Restaurants, Wedding Planning, SaaS).
+              Most of my career focuses on <strong>Lead Generation and Sales Campaigns</strong>, building acquisition funnels that enhance lead quality while driving down Cost Per Acquisition (CPA). I also lead landing page planning, wireframing, CRO recommendations, conversion tracking via GTM & GA4 Enhanced Conversions, Looker Studio reporting, Search Ads 360 (SA360) multi-engine search management, and monthly social media content planning (Interior Design, Restaurants, Wedding Planning, SaaS).
             </p>
             
             <div class="highlight-boxes">
@@ -1330,9 +1354,10 @@ input[type="text"], input[type="email"], textarea, select {
                 <li>Plan and optimize lead generation & sales campaigns.</li>
                 <li>Lead and mentor a 4-person performance marketing team.</li>
                 <li>Implement and troubleshoot tracking via GTM & GA4.</li>
+                <li>Build Looker Studio reporting dashboards for clients.</li>
+                <li>Manage Search Ads 360 (SA360) multi-engine search campaigns.</li>
                 <li>Design landing page strategy & coordinate with dev teams.</li>
                 <li>Create social media content calendars with creative teams.</li>
-                <li>Prepare performance reports and optimization roadmaps.</li>
                 <li>Serve B2B and D2C clients across SG, MY, US, AU, & EU.</li>
               </ul>
             </div>
@@ -1365,115 +1390,142 @@ input[type="text"], input[type="email"], textarea, select {
         <div class="section-header text-center">
           <span class="section-badge">Expertise & Tools</span>
           <h2 class="section-title">Core Competencies & Stack</h2>
-          <p class="section-subtitle">Deep expertise in Google Ads, Meta Ads, GTM, GA4, CRO, and campaign architecture</p>
+          <p class="section-subtitle">Deep expertise in Google Ads, Meta Ads, GTM, GA4, Looker Studio, Search Ads 360, and CRO</p>
         </div>
 
         <!-- Filter Tabs -->
         <div class="skill-tabs" id="skillTabs">
           <button class="tab-btn active" data-filter="all">All Expertise</button>
           <button class="tab-btn" data-filter="paid-media">Primary Platforms</button>
-          <button class="tab-btn" data-filter="analytics">Analytics & Tracking</button>
+          <button class="tab-btn" data-filter="analytics">Analytics & Reporting</button>
           <button class="tab-btn" data-filter="competencies">Strategy & CRO</button>
           <button class="tab-btn" data-filter="verticals">16+ Industries</button>
         </div>
 
         <div class="skills-grid" id="skillsGrid">
 
-          <!-- Primary Platforms -->
+          <!-- 1. Google Ads Suite -->
           <div class="skill-card glass-card" data-category="paid-media">
             <div class="skill-header">
-              <div class="skill-icon-bg bg-google">G</div>
+              <div class="skill-icon-bg">
+                <img src="assets/logo-google-ads.svg" alt="Google Ads Logo">
+              </div>
               <h3>Google Ads Suite</h3>
             </div>
-            <p>Search, Display, Performance Max (PMax), Shopping, Video, Demand Gen</p>
+            <p>Search, Display, Performance Max (PMax), Shopping, Video & Demand Gen campaigns</p>
             <div class="skill-progress-bar"><div class="progress-fill" style="width: 98%;"></div></div>
             <div class="skill-foot"><span>Expertise</span><span>Primary Core</span></div>
           </div>
 
+          <!-- 2. Meta Ads -->
           <div class="skill-card glass-card" data-category="paid-media">
             <div class="skill-header">
-              <div class="skill-icon-bg bg-meta">∞</div >
+              <div class="skill-icon-bg">
+                <img src="assets/logo-meta.svg" alt="Meta Ads Logo">
+              </div>
               <h3>Meta Ads (FB & IG)</h3>
             </div>
-            <p>Lead Gen, Catalog Sales, Retargeting, CBO, Advantage+ Creative Strategy</p>
+            <p>Lead Generation, Catalog Sales, Retargeting, CBO, Advantage+ Creative Strategy</p>
             <div class="skill-progress-bar"><div class="progress-fill" style="width: 96%;"></div></div>
             <div class="skill-foot"><span>Expertise</span><span>Primary Core</span></div>
           </div>
 
+          <!-- 3. LinkedIn Ads -->
           <div class="skill-card glass-card" data-category="paid-media">
             <div class="skill-header">
-              <div class="skill-icon-bg bg-microsoft">M</div>
-              <h3>Microsoft / Bing Ads</h3>
-            </div>
-            <p>Search & Display Network, Multi-engine Import & Synergies</p>
-            <div class="skill-progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
-            <div class="skill-foot"><span>Proficiency</span><span>Working Knowledge</span></div>
-          </div>
-
-          <div class="skill-card glass-card" data-category="paid-media">
-            <div class="skill-header">
-              <div class="skill-icon-bg bg-linkedin">in</div>
+              <div class="skill-icon-bg">
+                <img src="assets/logo-linkedin.svg" alt="LinkedIn Logo">
+              </div>
               <h3>LinkedIn Ads</h3>
             </div>
-            <p>B2B Lead Generation Forms, Sponsored Content & C-Suite Targeting</p>
+            <p>B2B Lead Generation Forms, Sponsored Content & C-Suite Executive Targeting</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+            <div class="skill-foot"><span>Proficiency</span><span>B2B Targeting</span></div>
+          </div>
+
+          <!-- 4. Microsoft / Bing Ads -->
+          <div class="skill-card glass-card" data-category="paid-media">
+            <div class="skill-header">
+              <div class="skill-icon-bg">
+                <img src="assets/logo-bing-ads.svg" alt="Bing Ads Logo">
+              </div>
+              <h3>Microsoft / Bing Ads</h3>
+            </div>
+            <p>Search & Display Network, Multi-engine Import & Search Campaign Synergies</p>
             <div class="skill-progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
             <div class="skill-foot"><span>Proficiency</span><span>Working Knowledge</span></div>
           </div>
 
-          <!-- Analytics & Tracking -->
+          <!-- 5. Search Ads 360 (SA360) - SEPARATE CARD -->
+          <div class="skill-card glass-card" data-category="paid-media">
+            <div class="skill-header">
+              <div class="skill-icon-bg">
+                <img src="assets/logo-sa360.svg" alt="Search Ads 360 Logo">
+              </div>
+              <h3>Search Ads 360 (SA360)</h3>
+            </div>
+            <p>Enterprise platform to manage, automate, and optimize search campaigns across multiple search engines</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="width: 75%;"></div></div>
+            <div class="skill-foot"><span>Experience</span><span>6 Months Experience</span></div>
+          </div>
+
+          <!-- 6. Google Tag Manager (GTM) -->
           <div class="skill-card glass-card" data-category="analytics">
             <div class="skill-header">
-              <div class="skill-icon-bg bg-cyan">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"/><path d="M7 7h.01"/></svg>
+              <div class="skill-icon-bg">
+                <img src="assets/logo-gtm.svg" alt="Google Tag Manager Logo">
               </div>
               <h3>Google Tag Manager (GTM)</h3>
             </div>
-            <p>Event Triggers, Custom JS Variables, Server-Side Setup & Data Layer</p>
+            <p>Event Triggers, Custom JS Variables, Server-Side Setup & Data Layer Architecture</p>
             <div class="skill-progress-bar"><div class="progress-fill" style="width: 95%;"></div></div>
             <div class="skill-foot"><span>Expertise</span><span>Advanced</span></div>
           </div>
 
+          <!-- 7. GA4 & Enhanced Conversions -->
           <div class="skill-card glass-card" data-category="analytics">
             <div class="skill-header">
-              <div class="skill-icon-bg bg-orange">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>
+              <div class="skill-icon-bg">
+                <img src="assets/logo-ga4.svg" alt="GA4 Logo">
               </div>
               <h3>GA4 & Enhanced Conversions</h3>
             </div>
-            <p>Custom Exploration Reports, First-Party Data Tracking & Attribution</p>
+            <p>Custom Exploration Reports, First-Party Data Tracking & Attribution Modeling</p>
             <div class="skill-progress-bar"><div class="progress-fill" style="width: 95%;"></div></div>
             <div class="skill-foot"><span>Expertise</span><span>Advanced</span></div>
           </div>
 
+          <!-- 8. Looker Studio - SEPARATE CARD -->
           <div class="skill-card glass-card" data-category="analytics">
             <div class="skill-header">
-              <div class="skill-icon-bg bg-teal">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+              <div class="skill-icon-bg">
+                <img src="assets/logo-looker-studio.svg" alt="Looker Studio Logo">
               </div>
-              <h3>Looker Studio & SA360</h3>
+              <h3>Looker Studio</h3>
             </div>
-            <p>Client KPI Dashboards, Data Blending & 6 Months Search Ads 360 Experience</p>
-            <div class="skill-progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
-            <div class="skill-foot"><span>Expertise</span><span>Advanced</span></div>
+            <p>Building automated client KPI dashboards, visual performance reports, and multi-source data blending</p>
+            <div class="skill-progress-bar"><div class="progress-fill" style="width: 92%;"></div></div>
+            <div class="skill-foot"><span>Reporting & BI</span><span>Advanced</span></div>
           </div>
 
-          <!-- Strategy & CRO -->
+          <!-- 9. Landing Page CRO & Wireframing -->
           <div class="skill-card glass-card" data-category="competencies">
             <div class="skill-header">
-              <div class="skill-icon-bg bg-green">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12A10 10 0 1 1 12 2v10z"/></svg>
+              <div class="skill-icon-bg">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12A10 10 0 1 1 12 2v10z"/></svg>
               </div>
               <h3>Landing Page CRO & Wireframing</h3>
             </div>
-            <p>Frictionless Lead Funnel Wireframing & Dev Team Coordination</p>
+            <p>Frictionless Lead Funnel Wireframing & Development Team Coordination</p>
             <div class="skill-progress-bar"><div class="progress-fill" style="width: 94%;"></div></div>
             <div class="skill-foot"><span>Expertise</span><span>Advanced</span></div>
           </div>
 
+          <!-- 10. Social Content Calendar Planning -->
           <div class="skill-card glass-card" data-category="competencies">
             <div class="skill-header">
-              <div class="skill-icon-bg bg-purple">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+              <div class="skill-icon-bg">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-purple)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
               </div>
               <h3>Social Content Calendar Planning</h3>
             </div>
@@ -1482,11 +1534,11 @@ input[type="text"], input[type="email"], textarea, select {
             <div class="skill-foot"><span>Expertise</span><span>Advanced</span></div>
           </div>
 
-          <!-- 16 Verticals Card -->
+          <!-- 11. 16 Verticals Card -->
           <div class="skill-card glass-card" data-category="verticals">
             <div class="skill-header">
-              <div class="skill-icon-bg bg-gold">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+              <div class="skill-icon-bg">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
               </div>
               <h3>16 Industry Verticals Covered</h3>
             </div>
@@ -1547,15 +1599,17 @@ input[type="text"], input[type="email"], textarea, select {
                 <li>Lead and mentor a team of 4 performance marketing specialists, coordinating campaign execution, reviewing deliverables, and supporting professional development.</li>
                 <li>Architect complete lead acquisition and sales funnels to improve lead quality and lower Cost Per Acquisition (CPA).</li>
                 <li>Implement and troubleshoot conversion tracking using GTM, GA4, and Enhanced Conversions.</li>
+                <li>Build Looker Studio performance reporting dashboards for client accountability.</li>
                 <li>Design landing page strategies, wireframes, and CRO recommendations while collaborating with internal development teams.</li>
                 <li>Create monthly social media content calendars and coordinate creative deliverables for Interior Design, Restaurants, Wedding Planning, and SaaS brands.</li>
               </ul>
               <div class="tags-cloud mt-3">
                 <span class="badge-tag">30+ Projects</span>
-                <span class="badge-tag">SGD 150K/Mo Budget</span>
+                <span class="badge-tag">SGD 150,000/Mo Budget</span>
                 <span class="badge-tag">Team Lead (4 Members)</span>
                 <span class="badge-tag">Singapore & Malaysia</span>
                 <span class="badge-tag">GTM & GA4</span>
+                <span class="badge-tag">Looker Studio</span>
               </div>
             </div>
           </div>
@@ -1578,11 +1632,11 @@ input[type="text"], input[type="email"], textarea, select {
                 </div>
               </div>
               <ul class="role-points">
-                <li>Executed performance marketing campaigns for B2B APAC enterprise clients, leveraging Search Ads 360 (SA360) for cross-engine search management.</li>
+                <li>Executed performance marketing campaigns for B2B APAC enterprise clients, leveraging Search Ads 360 (SA360) for cross-engine search management across Google and Bing.</li>
                 <li>Analyzed multi-market search performance data to drive pipeline growth and improve keyword efficiency.</li>
               </ul>
               <div class="tags-cloud mt-3">
-                <span class="badge-tag">Search Ads 360 (SA360)</span>
+                <span class="badge-tag">Search Ads 360 (SA360 - 6 Mos)</span>
                 <span class="badge-tag">Enterprise B2B</span>
                 <span class="badge-tag">APAC Region</span>
               </div>
@@ -1666,9 +1720,9 @@ input[type="text"], input[type="email"], textarea, select {
             <div class="achieve-icon bg-green">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
             </div>
-            <h3>SGD 150K Monthly Budget</h3>
+            <h3>SGD 150,000 Monthly Budget</h3>
             <p class="achieve-value">SGD 150,000 / Month</p>
-            <p class="achieve-desc">Independently overseeing SGD 150K monthly advertising spend across 30+ Singapore and Malaysia B2B and D2C client accounts.</p>
+            <p class="achieve-desc">Independently overseeing SGD 150,000 monthly advertising spend across 30+ Singapore and Malaysia B2B and D2C client accounts.</p>
           </div>
 
           <div class="achievement-card glass-card">
@@ -1757,8 +1811,8 @@ input[type="text"], input[type="email"], textarea, select {
             <div class="contact-social-box">
               <h4>Connect Across Channels:</h4>
               <div class="social-pills">
-                <a href="https://linkedin.com/in/rajeshnirmal" target="_blank" rel="noopener" class="s-pill linkedin">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg> LinkedIn
+                <a href="https://www.linkedin.com/in/rajesh-nirmal-1476a0214/" target="_blank" rel="noopener" class="s-pill linkedin">
+                  <img src="assets/logo-linkedin.svg" alt="LinkedIn" style="width: 16px; height: 16px;"> LinkedIn
                 </a>
                 <a href="https://x.com/RajeshNirmal15" target="_blank" rel="noopener" class="s-pill twitter">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> Twitter/X
@@ -1908,8 +1962,9 @@ document.addEventListener('DOMContentLoaded', () => {
       'Performance Marketing Lead',
       'Google & Meta Ads Specialist',
       'Lead Gen & Conversion Funnel Architect',
-      'GTM & GA4 Tracking Pro',
-      'Landing Page & CRO Strategist'
+      'Looker Studio & GA4 Analytics Pro',
+      'Search Ads 360 (SA360) Strategist',
+      'Landing Page & CRO Specialist'
     ];
     let roleIndex = 0;
     let charIndex = 0;
