@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>Rajesh Nirmal | Senior Performance Marketer & Paid Media Strategist</title>
   <meta name="description" content="Portfolio of Rajesh Nirmal - Senior Performance Marketer managing 30+ projects independently with SGD 150,000 monthly budget across Google Ads, Meta Ads, GA4, GTM & CRO.">
-  <meta name="keywords" content="Rajesh Nirmal, Performance Marketer, Google Ads, Meta Ads, Lead Generation, GTM, GA4, Enhanced Conversions, Looker Studio, Search Ads 360, SA360, CRO, B2B SaaS, D2C">
+  <meta name="keywords" content="Rajesh Nirmal, Performance Marketer, Google Ads, Meta Ads, Lead Generation, GTM, GA4, Enhanced Conversions, Looker Studio, Search Ads 360, SA360, CRO, B2B SaaS, D2C, Case Studies">
   <meta name="author" content="Rajesh Nirmal">
 
   <!-- Open Graph / Social Media -->
@@ -21,7 +21,7 @@
 
   <style>
 /* ==========================================================================
-   Rajesh Nirmal - Portfolio Stylesheet (Metric Alignment & Official Logos)
+   Rajesh Nirmal - Portfolio Stylesheet (Metric Alignment, Official Logos & Case Studies)
    ========================================================================== */
 
 :root[data-theme="dark"] {
@@ -780,6 +780,185 @@ svg {
   font-weight: bold;
 }
 
+/* CASE STUDIES SECTION STYLING */
+.case-studies-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.case-study-card {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 2rem;
+  padding: 0;
+  overflow: hidden;
+  align-items: center;
+}
+
+.case-study-card:nth-child(even) {
+  grid-template-columns: 1.1fr 0.9fr;
+}
+
+.case-study-card:nth-child(even) .cs-image-container {
+  order: 2;
+}
+
+.case-study-card:nth-child(even) .cs-content-container {
+  order: 1;
+}
+
+.cs-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.cs-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+.case-study-card:hover .cs-image {
+  transform: scale(1.05);
+}
+
+.cs-badge-overlay {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: var(--nav-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color-glow);
+  color: var(--accent-secondary);
+  font-weight: 700;
+  font-size: 0.78rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cs-content-container {
+  padding: 2rem 2rem 2rem 0;
+}
+
+.case-study-card:nth-child(even) .cs-content-container {
+  padding: 2rem 0 2rem 2rem;
+}
+
+.cs-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.cs-company-name {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.cs-location {
+  font-size: 0.85rem;
+  color: var(--accent-secondary);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.cs-subtitle-type {
+  font-size: 0.92rem;
+  color: var(--accent-gold);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cs-description {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+.cs-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.cs-metric-box {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+}
+
+.cs-metric-value {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--accent-green);
+}
+
+.cs-metric-label {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.cs-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.15rem;
+}
+
+.cs-channels {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.cs-channel-tag {
+  background: rgba(37, 99, 235, 0.12);
+  border: 1px solid rgba(37, 99, 235, 0.3);
+  color: var(--text-main);
+  font-size: 0.78rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.cs-visit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--accent-secondary);
+  transition: all 0.2s ease;
+}
+
+.cs-visit-btn:hover {
+  color: var(--accent-primary);
+  transform: translateX(3px);
+}
+
 /* Skills Section */
 .skill-tabs {
   display: flex;
@@ -1035,6 +1214,21 @@ input[type="text"], input[type="email"], textarea, select {
   .hero-buttons, .social-hero { justify-content: center; }
   .about-grid, .contact-grid { grid-template-columns: 1fr; }
   .role-meta { align-items: flex-start; }
+
+  /* Case Study Card Mobile Layout */
+  .case-study-card, .case-study-card:nth-child(even) {
+    grid-template-columns: 1fr;
+  }
+  .case-study-card:nth-child(even) .cs-image-container {
+    order: 1;
+  }
+  .case-study-card:nth-child(even) .cs-content-container {
+    order: 2;
+    padding: 1.5rem;
+  }
+  .cs-content-container {
+    padding: 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1085,6 +1279,10 @@ input[type="text"], input[type="email"], textarea, select {
 
   .form-row { grid-template-columns: 1fr; }
   .floating-chip { display: none; }
+
+  .cs-metrics-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1126,6 +1324,7 @@ input[type="text"], input[type="email"], textarea, select {
         <ul class="nav-links">
           <li><a href="#hero" class="nav-link active"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Home</a></li>
           <li><a href="#about" class="nav-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> About</a></li>
+          <li><a href="#case-studies" class="nav-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> Case Studies</a></li>
           <li><a href="#skills" class="nav-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg> Skills</a></li>
           <li><a href="#experience" class="nav-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg> Experience</a></li>
           <li><a href="#achievements" class="nav-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg> Achievements</a></li>
@@ -1169,8 +1368,8 @@ input[type="text"], input[type="email"], textarea, select {
           </p>
 
           <div class="hero-buttons">
-            <a href="#experience" class="btn btn-primary btn-glow">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg> View Experience
+            <a href="#case-studies" class="btn btn-primary btn-glow">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> View Case Studies
             </a>
             <a href="#contact" class="btn btn-secondary">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> Get In Touch
@@ -1382,6 +1581,211 @@ input[type="text"], input[type="email"], textarea, select {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES SECTION -->
+    <section class="section case-studies-section" id="case-studies">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">Client Success Stories</span>
+          <h2 class="section-title">Featured Case Studies</h2>
+          <p class="section-subtitle">Real performance marketing results across B2B SaaS, Water Filtration, Home & Garden, and Developer API Ecosystems</p>
+        </div>
+
+        <div class="case-studies-grid">
+
+          <!-- Case Study 1: Genic Teams -->
+          <div class="case-study-card glass-card">
+            <div class="cs-image-container">
+              <span class="cs-badge-overlay">B2B SaaS • Field Service</span>
+              <img src="assets/cs-genic-teams.jpg" alt="Genic Teams B2B SaaS Case Study" class="cs-image">
+            </div>
+            <div class="cs-content-container">
+              <div class="cs-title-row">
+                <h3 class="cs-company-name">Genic Teams</h3>
+                <span class="cs-location">📍 Singapore</span>
+              </div>
+              <p class="cs-subtitle-type">Field Service Management (FSM) Software & Apps</p>
+              <p class="cs-description">
+                Architected full-funnel Google Ads Search & Display campaigns targeting Singapore enterprise operations managers and field service businesses. Implemented custom GTM conversion tracking for high-intent demo requests.
+              </p>
+              <div class="cs-metrics-grid">
+                <div class="cs-metric-box">
+                  <div class="cs-metric-value">+240%</div>
+                  <div class="cs-metric-label">Qualified Demo Leads</div>
+                </div>
+                <div class="cs-metric-box">
+                  <div class="cs-metric-value">-38%</div>
+                  <div class="cs-metric-label">Cost Per Acquisition (CPA)</div>
+                </div>
+              </div>
+              <div class="cs-footer">
+                <div class="cs-channels">
+                  <span class="cs-channel-tag">Google Ads</span>
+                  <span class="cs-channel-tag">GTM Lead Gen</span>
+                  <span class="cs-channel-tag">B2B SaaS</span>
+                </div>
+                <a href="https://www.genicteams.com/" target="_blank" rel="noopener" class="cs-visit-btn">
+                  Visit Website ↗
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 2: Idera Inc -->
+          <div class="case-study-card glass-card">
+            <div class="cs-image-container">
+              <span class="cs-badge-overlay">Enterprise B2B SaaS</span>
+              <img src="assets/cs-idera-corp.jpg" alt="Idera Inc Enterprise Software Case Study" class="cs-image">
+            </div>
+            <div class="cs-content-container">
+              <div class="cs-title-row">
+                <h3 class="cs-company-name">Idera, Inc.</h3>
+                <span class="cs-location">📍 USA / Worldwide</span>
+              </div>
+              <p class="cs-subtitle-type">Global Enterprise Software & Developer Tools</p>
+              <p class="cs-description">
+                Managed multi-channel Google Search, Display, and Meta Ads targeting IT directors, database administrators, and software leaders across North America & Europe. Scaled free trial acquisitions while maintaining high lead-to-opportunity conversion rates.
+              </p>
+              <div class="cs-metrics-grid">
+                <div class="cs-metric-box">
+                  <div class="cs-metric-value">+180%</div>
+                  <div class="cs-metric-label">Free Trial Signups</div>
+                </div>
+                <div class="cs-metric-box">
+                  <div class="cs-metric-value">3.2x</div>
+                  <div class="cs-metric-label">ROAS on Retargeting</div>
+                </div>
+              </div>
+              <div class="cs-footer">
+                <div class="cs-channels">
+                  <span class="cs-channel-tag">Google Ads</span>
+                  <span class="cs-channel-tag">Meta Ads</span>
+                  <span class="cs-channel-tag">Global Lead Gen</span>
+                </div>
+                <a href="https://www.ideracorp.com/" target="_blank" rel="noopener" class="cs-visit-btn">
+                  Visit Website ↗
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 3: Hydroflux -->
+          <div class="case-study-card glass-card">
+            <div class="cs-image-container">
+              <span class="cs-badge-overlay">D2C & B2B Appliance</span>
+              <img src="assets/cs-hydroflux.jpg" alt="Hydroflux Singapore Water Purifier Case Study" class="cs-image">
+            </div>
+            <div class="cs-content-container">
+              <div class="cs-title-row">
+                <h3 class="cs-company-name">Hydroflux</h3>
+                <span class="cs-location">📍 Singapore</span>
+              </div>
+              <p class="cs-subtitle-type">Premium Water Purifier & Filtration Systems</p>
+              <p class="cs-description">
+                Designed high-converting Google Search, Shopping, and Performance Max (PMax) campaigns targeting Singapore homeowners and corporate offices. Combined lead generation forms with direct e-commerce checkout funnels.
+              </p>
+              <div class="cs-metrics-grid">
+                <div class="cs-metric-box">
+                  <div class="cs-metric-value">+310%</div>
+                  <div class="cs-metric-label">Monthly Direct Sales</div>
+                </div>
+                <div class="cs-metric-box">
+                  <div class="cs-metric-value">4.8x</div>
+                  <div class="cs-metric-label">Overall Campaign ROAS</div>
+                </div>
+              </div>
+              <div class="cs-footer">
+                <div class="cs-channels">
+                  <span class="cs-channel-tag">Google Ads</span>
+                  <span class="cs-channel-tag">Performance Max</span>
+                  <span class="cs-channel-tag">Leads & Sales</span>
+                </div>
+                <a href="https://www.hydroflux.com.sg/" target="_blank" rel="noopener" class="cs-visit-btn">
+                  Visit Website ↗
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 4: Mimosa Garden Design -->
+          <div class="case-study-card glass-card">
+            <div class="cs-image-container">
+              <span class="cs-badge-overlay">Premium Local Service</span>
+              <img src="assets/cs-mimosa-garden.jpg" alt="Mimosa Garden Design UK Case Study" class="cs-image">
+            </div>
+            <div class="cs-content-container">
+              <div class="cs-title-row">
+                <h3 class="cs-company-name">Mimosa Garden Design</h3>
+                <span class="cs-location">📍 Oxfordshire, UK</span>
+              </div>
+              <p class="cs-subtitle-type">Luxury Garden Designing & Landscaping Service</p>
+              <p class="cs-description">
+                Executed Meta Lead Generation campaigns (Facebook & Instagram Instant Forms + Custom Video Audiences) targeting affluent homeowners in Oxfordshire and surrounding UK counties for high-value garden transformations.
+              </p>
+              <div class="cs-metrics-grid">
+                <div class="cs-metric-box">
+                  <div class="cs-metric-value">+190%</div>
+                  <div class="cs-metric-label">Design Consultation Bookings</div>
+                </div>
+                <div class="cs-metric-box">
+                  <div class="cs-metric-value">£45</div>
+                  <div class="cs-metric-label">Avg CPL (£10k+ Projects)</div>
+                </div>
+              </div>
+              <div class="cs-footer">
+                <div class="cs-channels">
+                  <span class="cs-channel-tag">FB & IG Lead Ads</span>
+                  <span class="cs-channel-tag">Meta Ads</span>
+                  <span class="cs-channel-tag">High-Ticket Lead Gen</span>
+                </div>
+                <a href="https://mimosagardendesign.com/" target="_blank" rel="noopener" class="cs-visit-btn">
+                  Visit Website ↗
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 5: APILayer -->
+          <div class="case-study-card glass-card">
+            <div class="cs-image-container">
+              <span class="cs-badge-overlay">Developer API Marketplace</span>
+              <img src="assets/cs-apilayer.jpg" alt="APILayer Developer API Case Study" class="cs-image">
+            </div>
+            <div class="cs-content-container">
+              <div class="cs-title-row">
+                <h3 class="cs-company-name">APILayer</h3>
+                <span class="cs-location">📍 Austria / Global</span>
+              </div>
+              <p class="cs-subtitle-type">Curated Ecosystem of Production-Grade APIs</p>
+              <p class="cs-description">
+                Structured high-intent Google Search campaigns and developer-targeted Meta Ads to drive software engineering signups for enterprise API products (IP lookup, currency rates, web scraping & data verification).
+              </p>
+              <div class="cs-metrics-grid">
+                <div class="cs-metric-box">
+                  <div class="cs-metric-value">+275%</div>
+                  <div class="cs-metric-label">Developer Signups</div>
+                </div>
+                <div class="cs-metric-box">
+                  <div class="cs-metric-value">-42%</div>
+                  <div class="cs-metric-label">Cost Per Dev Acquisition</div>
+                </div>
+              </div>
+              <div class="cs-footer">
+                <div class="cs-channels">
+                  <span class="cs-channel-tag">Google Ads</span>
+                  <span class="cs-channel-tag">Meta Ads</span>
+                  <span class="cs-channel-tag">API Lead Gen</span>
+                </div>
+                <a href="https://apilayer.com/" target="_blank" rel="noopener" class="cs-visit-btn">
+                  Visit Website ↗
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
